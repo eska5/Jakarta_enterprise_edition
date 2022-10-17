@@ -1,0 +1,84 @@
+********************************************************************************
+product = Open Liberty 22.0.0.10 (wlp-1.0.69.cl221020220912-1100)
+wlp.install.dir = /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/
+java.home = /Library/Java/JavaVirtualMachines/adoptopenjdk-15.jdk/Contents/Home
+java.version = 15.0.2
+java.runtime = OpenJDK Runtime Environment (15.0.2+7)
+os = Mac OS X (10.16; x86_64) (pl_PL)
+process = 23180@MacBook-Pro-Micha.local
+Classpath = /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/bin/tools/ws-server.jar
+Java Library path = /Users/jakubsachajko/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+********************************************************************************
+[17.10.2022, 23:17:12:135 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: Serwer defaultServer został uruchomiony.
+[17.10.2022, 23:17:12:883 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: Jądro zostało uruchomione po 1,189 sek. s
+[17.10.2022, 23:17:12:896 CEST] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Uruchomiono aktualizację składnika.
+[17.10.2022, 23:17:13:123 CEST] 0000001c com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitorowanie aplikacji w katalogu dropins.
+[17.10.2022, 23:17:13:416 CEST] 0000002d com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Uruchamianie aplikacji Pokedex-1.0.
+[17.10.2022, 23:17:13:417 CEST] 0000002d bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: Aplikacja Pokedex-1.0 używa luźnej definicji aplikacji w położeniu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/dropins/Pokedex-1.0.war.xml.
+[17.10.2022, 23:17:13:779 CEST] 0000002d com.ibm.ws.session.WASSessionCore                            I SESN8501I: Menedżer sesji nie znalazł położenia trwałej pamięci masowej. Obiekty HttpSession będą zapisywane w pamięci lokalnego serwera aplikacji.
+[17.10.2022, 23:17:13:792 CEST] 0000002d com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Ładowanie modułu WWW: Pokedex-1.0.
+[17.10.2022, 23:17:13:797 CEST] 0000002d com.ibm.ws.webcontainer                                      I SRVE0250I: Moduł WWW Pokedex-1.0 został powiązany z hostem wirtualnym default_host.
+[17.10.2022, 23:17:13:798 CEST] 0000002d com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Dostępna aplikacja WWW (default_host): http://localhost:9080/pokedex/
+[17.10.2022, 23:17:13:840 CEST] 0000002d com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Automatycznie wygenerowano plik konfiguracyjny wtyczki serwera WWW dla tego serwera w katalogu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[17.10.2022, 23:17:13:850 CEST] 00000027 com.ibm.ws.session.WASSessionCore                            I SESN0176I: W odniesieniu do klucza aplikacji default_host/pokedex zostanie utworzony nowy kontekst sesji.
+[17.10.2022, 23:17:13:856 CEST] 00000027 com.ibm.ws.util                                              I SESN0172I: Menedżer sesji korzysta przy generowaniu identyfikatora sesji z domyślnej implementacji klasy SecureRandom języka Java.
+[17.10.2022, 23:17:13:909 CEST] 00000027 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Aplikacja Pokedex-1.0 została uruchomiona w ciągu 0,492 sek.
+[17.10.2022, 23:17:13:921 CEST] 00000025 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: Kanał TCP defaultHttpEndpoint został uruchomiony i obecnie nasłuchuje żądań na hoście localhost  (IPv4: 127.0.0.1) (port 9080).
+[17.10.2022, 23:17:13:927 CEST] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: Serwer został zainstalowany z następującymi składnikami: [jsonb-1.0, jsonp-1.1, servlet-4.0].
+[17.10.2022, 23:17:13:928 CEST] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Aktualizacja składnika została zakończona po 1,046 sek.
+[17.10.2022, 23:17:13:929 CEST] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: Serwer defaultServer jest gotowy do działania w trybie Mądrzejszy Świat. Serwer defaultServer został uruchomiony w ciągu 2,235 sekund.
+[17.10.2022, 23:17:17:577 CEST] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Usunięta aplikacja WWW (default_host): http://localhost:9080/pokedex/
+[17.10.2022, 23:17:17:593 CEST] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: Aplikacja Pokedex-1.0 została zatrzymana pomyślnie.
+[17.10.2022, 23:17:17:598 CEST] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Uruchamianie aplikacji Pokedex-1.0.
+[17.10.2022, 23:17:17:598 CEST] 00000029 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: Aplikacja Pokedex-1.0 używa luźnej definicji aplikacji w położeniu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/dropins/Pokedex-1.0.war.xml.
+[17.10.2022, 23:17:17:709 CEST] 00000029 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Ładowanie modułu WWW: Pokedex-1.0.
+[17.10.2022, 23:17:17:709 CEST] 00000029 com.ibm.ws.webcontainer                                      I SRVE0250I: Moduł WWW Pokedex-1.0 został powiązany z hostem wirtualnym default_host.
+[17.10.2022, 23:17:17:710 CEST] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Dostępna aplikacja WWW (default_host): http://localhost:9080/pokedex/
+[17.10.2022, 23:17:17:756 CEST] 00000029 com.ibm.ws.session.WASSessionCore                            I SESN0176I: W odniesieniu do klucza aplikacji default_host/pokedex zostanie utworzony nowy kontekst sesji.
+[17.10.2022, 23:17:17:757 CEST] 00000029 com.ibm.ws.util                                              I SESN0172I: Menedżer sesji korzysta przy generowaniu identyfikatora sesji z domyślnej implementacji klasy SecureRandom języka Java.
+[17.10.2022, 23:17:17:811 CEST] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: Aplikacja Pokedex-1.0 została zaktualizowana w ciągu 0,213 sek.
+[17.10.2022, 23:17:17:979 CEST] 00000025 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Automatycznie wygenerowano plik konfiguracyjny wtyczki serwera WWW dla tego serwera w katalogu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[17.10.2022, 23:17:18:003 CEST] 00000027 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Automatycznie wygenerowano plik konfiguracyjny wtyczki serwera WWW dla tego serwera w katalogu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[17.10.2022, 23:17:23:764 CEST] 00000025 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [Pokedex-1.0] [/pokedex] [servlet.TrainerServlet]: inicjowanie powiodło się.
+[17.10.2022, 23:17:24:009 CEST] 00000025 com.ibm.ws.webcontainer.srt                                  W SRVE8094W: Ostrzeżenie: nie można ustawić nagłówka. Odpowiedź została już zatwierdzona.  Dane śledzenia stosu dla błędnej próby ustawienia nagłówka: 
+        at com.ibm.ws.webcontainer.srt.SRTServletResponse.addHeader(SRTServletResponse.java:2205)
+        at [internal classes].(Unknown Source)
+        at servlet.TrainerServlet.getTrainerProfilePicture(TrainerServlet.java:112)
+        at servlet.TrainerServlet.doGet(TrainerServlet.java:41)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:686)
+        at [internal classes].(Unknown Source)
+
+[17.10.2022, 23:17:24:010 CEST] 00000025 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:17:40:022 CEST] 0000002f com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:18:56:222 CEST] 00000025 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:18:59:483 CEST] 00000028 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:19:00:998 CEST] 0000002f com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:19:02:377 CEST] 00000028 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:19:02:382 CEST] 00000025 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:19:02:382 CEST] 00000028 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:19:07:577 CEST] 0000002d com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:19:10:407 CEST] 0000002f com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:23:42:385 CEST] 00000034 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:24:46:050 CEST] 00000029 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:24:47:625 CEST] 0000002f com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:24:47:627 CEST] 00000033 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:24:47:634 CEST] 0000002d com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:24:53:364 CEST] 00000029 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:24:53:391 CEST] 00000034 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:24:53:397 CEST] 0000002f com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:25:31:171 CEST] 00000034 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:25:32:746 CEST] 0000002d com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:25:39:711 CEST] 00000028 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:25:40:562 CEST] 0000002f com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:25:45:515 CEST] 0000002d com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:25:49:694 CEST] 0000002d com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:25:51:280 CEST] 00000032 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:25:52:247 CEST] 0000002f com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:28:26:481 CEST] 00000014 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0085I: Serwer defaultServer jest zatrzymywany, ponieważ kończone jest działanie maszyny JVM.
+[17.10.2022, 23:28:26:489 CEST] 00000037 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Oczekiwanie co najwyżej przez 30 s na wyciszenie serwera.
+[17.10.2022, 23:28:26:501 CEST] 00000028 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: Dla kanału TCP defaultHttpEndpoint zatrzymano nasłuchiwanie żądań na hoście localhost  (IPv4: 127.0.0.1) (port 9080).
+[17.10.2022, 23:28:26:503 CEST] 00000028 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Usunięta aplikacja WWW (default_host): http://localhost:9080/pokedex/
+[17.10.2022, 23:28:26:506 CEST] 00000037 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Zakończono wyciszanie serwera.
+[17.10.2022, 23:28:26:535 CEST] 0000002d com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: Aplikacja Pokedex-1.0 została zatrzymana pomyślnie.
+[17.10.2022, 23:28:26:977 CEST] 00000015 com.ibm.ws.kernel.launch.internal.ServerCommandListener      A CWWKE0055I: Zażądano zamknięcia serwera w dniu poniedziałek, 17 października 2022 o godzinie 23:28. Serwer defaultServer jest wyłączany.
+[17.10.2022, 23:28:27:075 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: Serwer defaultServer został zatrzymany po 11 min., 15,377 sek..

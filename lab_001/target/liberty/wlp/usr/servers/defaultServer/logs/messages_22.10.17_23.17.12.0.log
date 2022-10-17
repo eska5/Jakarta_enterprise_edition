@@ -1,0 +1,59 @@
+********************************************************************************
+product = Open Liberty 22.0.0.10 (wlp-1.0.69.cl221020220912-1100)
+wlp.install.dir = /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/
+java.home = /Library/Java/JavaVirtualMachines/adoptopenjdk-15.jdk/Contents/Home
+java.version = 15.0.2
+java.runtime = OpenJDK Runtime Environment (15.0.2+7)
+os = Mac OS X (10.16; x86_64) (pl_PL)
+process = 22960@MacBook-Pro-Micha.local
+Classpath = /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/bin/tools/ws-server.jar
+Java Library path = /Users/jakubsachajko/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+********************************************************************************
+[17.10.2022, 23:07:45:015 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: Serwer defaultServer został uruchomiony.
+[17.10.2022, 23:07:45:741 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: Jądro zostało uruchomione po 1,186 sek. s
+[17.10.2022, 23:07:45:752 CEST] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Uruchomiono aktualizację składnika.
+[17.10.2022, 23:07:45:966 CEST] 0000001a com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitorowanie aplikacji w katalogu dropins.
+[17.10.2022, 23:07:46:315 CEST] 0000002d com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Uruchamianie aplikacji Pokedex-1.0.
+[17.10.2022, 23:07:46:315 CEST] 0000002d bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: Aplikacja Pokedex-1.0 używa luźnej definicji aplikacji w położeniu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/dropins/Pokedex-1.0.war.xml.
+[17.10.2022, 23:07:46:725 CEST] 0000002d com.ibm.ws.session.WASSessionCore                            I SESN8501I: Menedżer sesji nie znalazł położenia trwałej pamięci masowej. Obiekty HttpSession będą zapisywane w pamięci lokalnego serwera aplikacji.
+[17.10.2022, 23:07:46:739 CEST] 0000002d com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Ładowanie modułu WWW: Pokedex-1.0.
+[17.10.2022, 23:07:46:745 CEST] 0000002d com.ibm.ws.webcontainer                                      I SRVE0250I: Moduł WWW Pokedex-1.0 został powiązany z hostem wirtualnym default_host.
+[17.10.2022, 23:07:46:746 CEST] 0000002d com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Dostępna aplikacja WWW (default_host): http://localhost:9080/pokedex/
+[17.10.2022, 23:07:46:786 CEST] 00000028 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Automatycznie wygenerowano plik konfiguracyjny wtyczki serwera WWW dla tego serwera w katalogu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[17.10.2022, 23:07:46:792 CEST] 00000027 com.ibm.ws.session.WASSessionCore                            I SESN0176I: W odniesieniu do klucza aplikacji default_host/pokedex zostanie utworzony nowy kontekst sesji.
+[17.10.2022, 23:07:46:799 CEST] 00000027 com.ibm.ws.util                                              I SESN0172I: Menedżer sesji korzysta przy generowaniu identyfikatora sesji z domyślnej implementacji klasy SecureRandom języka Java.
+[17.10.2022, 23:07:46:860 CEST] 00000027 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Aplikacja Pokedex-1.0 została uruchomiona w ciągu 0,545 sek.
+[17.10.2022, 23:07:46:905 CEST] 00000025 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: Kanał TCP defaultHttpEndpoint został uruchomiony i obecnie nasłuchuje żądań na hoście localhost  (IPv4: 127.0.0.1) (port 9080).
+[17.10.2022, 23:07:46:911 CEST] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: Serwer został zainstalowany z następującymi składnikami: [jsonb-1.0, jsonp-1.1, servlet-4.0].
+[17.10.2022, 23:07:46:912 CEST] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Aktualizacja składnika została zakończona po 1,171 sek.
+[17.10.2022, 23:07:46:912 CEST] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: Serwer defaultServer jest gotowy do działania w trybie Mądrzejszy Świat. Serwer defaultServer został uruchomiony w ciągu 2,358 sekund.
+[17.10.2022, 23:07:50:909 CEST] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Usunięta aplikacja WWW (default_host): http://localhost:9080/pokedex/
+[17.10.2022, 23:07:50:923 CEST] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: Aplikacja Pokedex-1.0 została zatrzymana pomyślnie.
+[17.10.2022, 23:07:50:927 CEST] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Uruchamianie aplikacji Pokedex-1.0.
+[17.10.2022, 23:07:50:928 CEST] 00000029 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: Aplikacja Pokedex-1.0 używa luźnej definicji aplikacji w położeniu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/dropins/Pokedex-1.0.war.xml.
+[17.10.2022, 23:07:51:042 CEST] 00000029 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Ładowanie modułu WWW: Pokedex-1.0.
+[17.10.2022, 23:07:51:043 CEST] 00000029 com.ibm.ws.webcontainer                                      I SRVE0250I: Moduł WWW Pokedex-1.0 został powiązany z hostem wirtualnym default_host.
+[17.10.2022, 23:07:51:043 CEST] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Dostępna aplikacja WWW (default_host): http://localhost:9080/pokedex/
+[17.10.2022, 23:07:51:051 CEST] 00000027 com.ibm.ws.session.WASSessionCore                            I SESN0176I: W odniesieniu do klucza aplikacji default_host/pokedex zostanie utworzony nowy kontekst sesji.
+[17.10.2022, 23:07:51:052 CEST] 00000027 com.ibm.ws.util                                              I SESN0172I: Menedżer sesji korzysta przy generowaniu identyfikatora sesji z domyślnej implementacji klasy SecureRandom języka Java.
+[17.10.2022, 23:07:51:101 CEST] 00000027 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: Aplikacja Pokedex-1.0 została zaktualizowana w ciągu 0,173 sek.
+[17.10.2022, 23:07:51:222 CEST] 0000002d com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Automatycznie wygenerowano plik konfiguracyjny wtyczki serwera WWW dla tego serwera w katalogu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[17.10.2022, 23:07:51:245 CEST] 00000031 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Automatycznie wygenerowano plik konfiguracyjny wtyczki serwera WWW dla tego serwera w katalogu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[17.10.2022, 23:07:56:189 CEST] 00000028 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [Pokedex-1.0] [/pokedex] [servlet.TrainerServlet]: inicjowanie powiodło się.
+[17.10.2022, 23:07:56:272 CEST] 00000028 com.ibm.ws.webcontainer.srt                                  W SRVE8094W: Ostrzeżenie: nie można ustawić nagłówka. Odpowiedź została już zatwierdzona.  Dane śledzenia stosu dla błędnej próby ustawienia nagłówka: 
+        at com.ibm.ws.webcontainer.srt.SRTServletResponse.addHeader(SRTServletResponse.java:2205)
+        at [internal classes].(Unknown Source)
+        at servlet.TrainerServlet.getTrainerProfilePicture(TrainerServlet.java:112)
+        at servlet.TrainerServlet.doGet(TrainerServlet.java:41)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:686)
+        at [internal classes].(Unknown Source)
+
+[17.10.2022, 23:07:56:272 CEST] 00000028 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[17.10.2022, 23:14:35:232 CEST] 00000014 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0085I: Serwer defaultServer jest zatrzymywany, ponieważ kończone jest działanie maszyny JVM.
+[17.10.2022, 23:14:35:237 CEST] 0000003f com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Oczekiwanie co najwyżej przez 30 s na wyciszenie serwera.
+[17.10.2022, 23:14:35:246 CEST] 00000038 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: Dla kanału TCP defaultHttpEndpoint zatrzymano nasłuchiwanie żądań na hoście localhost  (IPv4: 127.0.0.1) (port 9080).
+[17.10.2022, 23:14:35:248 CEST] 00000038 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Usunięta aplikacja WWW (default_host): http://localhost:9080/pokedex/
+[17.10.2022, 23:14:35:253 CEST] 0000003f com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Zakończono wyciszanie serwera.
+[17.10.2022, 23:14:35:277 CEST] 0000002e com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: Aplikacja Pokedex-1.0 została zatrzymana pomyślnie.
+[17.10.2022, 23:14:35:532 CEST] 00000015 com.ibm.ws.kernel.launch.internal.ServerCommandListener      A CWWKE0055I: Zażądano zamknięcia serwera w dniu poniedziałek, 17 października 2022 o godzinie 23:14. Serwer defaultServer jest wyłączany.
+[17.10.2022, 23:14:35:671 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: Serwer defaultServer został zatrzymany po 6 min., 51,113 sek..

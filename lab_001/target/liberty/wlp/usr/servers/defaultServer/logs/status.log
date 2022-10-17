@@ -1,0 +1,13 @@
+
+arg0=defaultServer
+arg1=--pid=
+arg2=--status
+exit=1
+
+                 Java home:  /Library/Java/JavaVirtualMachines/adoptopenjdk-15.jdk/Contents/Home
+              Install root:  /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/
+          System libraries:  /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/lib/
+                 User root:  /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/
+                    Config:  /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/
+                    Output:  /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/
+

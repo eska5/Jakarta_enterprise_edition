@@ -1,0 +1,6 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      3 16.10.2022, 23:48:52:543 CEST 16.10.2022, 23:49:03:016 CEST java.lang.NullPointerException com.ibm.ws.webcontainer.webapp.WebApp.notifyServletContextCreated 1341
+                                                                            - /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_22.10.16_23.48.52.0.log
+------+------+---------------------------+---------------------------+---------------------------
