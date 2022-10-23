@@ -1,0 +1,47 @@
+GET http://localhost:9080/pokedex/api/trainer/MADJAKUB
+
+###
+GET http://localhost:9080/pokedex/api/trainer/dobrylogin
+
+###
+GET http://localhost:9080/pokedex/api/trainer/RobertKubica
+
+###
+GET http://localhost:9080/pokedex/api/trainer/MasnyLukasz
+
+###
+GET http://localhost:9080/pokedex/api/trainer/noname
+
+###
+GET http://localhost:9080/pokedex/api/trainers
+
+###
+GET http://localhost:9080/pokedex/api/trainer/MADJAKUB/profilePicture
+
+### add avatar
+PUT http://localhost:9080/pokedex/api/trainer/MADJAKUB/profilePicture
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="profilePicture"; filename="profile3.jpeg"
+
+< /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/src/main/resources/trainerPictures/profile3.jpeg
+--boundary--
+
+### update avatar
+PUT http://localhost:9080/pokedex/api/trainer/MADJAKUB/profilePicture
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="profilePicture"; filename="profile4.jpeg"
+
+< /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/src/main/resources/trainerPictures/profile4.jpeg
+--boundary--
+
+### get avatar
+GET http://localhost:9080/pokedex/api/trainer/MADJAKUB/profilePicture
+Accept: image/jpeg
+
+### delete avatar
+DELETE  http://localhost:9080/pokedex/api/trainer/MADJAKUB/profilePicture
+Accept: application/json
