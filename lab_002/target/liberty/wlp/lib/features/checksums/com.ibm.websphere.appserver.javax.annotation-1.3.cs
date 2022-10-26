@@ -1,3 +1,3 @@
-#Sun Oct 23 02:15:27 CEST 2022
-lib/features/com.ibm.websphere.appserver.javax.annotation-1.3.mf=f7c94720f9d3371d53ace82f2ccb2bce
-dev/api/spec/com.ibm.websphere.javaee.annotation.1.3_1.0.69.jar=1099f3744d4c4d5567bc63320df62549
+#Tue Oct 25 15:35:56 CEST 2022
+lib/features/com.ibm.websphere.appserver.javax.annotation-1.3.mf=96df30ec8361827d385d36a9ab64fc23
+dev/api/spec/com.ibm.websphere.javaee.annotation.1.3_1.0.70.jar=e1506b030c287877d562b14e1b8cc792

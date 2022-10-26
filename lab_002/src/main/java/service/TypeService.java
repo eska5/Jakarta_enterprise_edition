@@ -31,6 +31,14 @@ public class TypeService {
         typeRepository.create(type);
     }
 
+    public void update(Type type) {
+        typeRepository.update(type);
+    }
+
+    public void delete(String name) {
+        typeRepository.delete(typeRepository.find(name).orElseThrow());
+    }
+
     public List<Type> findAll(){
         return typeRepository.findAll();
     }

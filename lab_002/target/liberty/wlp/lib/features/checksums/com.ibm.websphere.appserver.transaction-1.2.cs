@@ -1,12 +1,12 @@
-#Sun Oct 23 02:15:27 CEST 2022
-lib/features/com.ibm.websphere.appserver.transaction-1.2.mf=a9373e85d075177bfd6f84a8ceb20b70
-dev/spi/ibm/javadoc/com.ibm.websphere.appserver.spi.transaction_1.1-javadoc.zip=b551627e2f086bee77c361c3c213e0e7
-lib/com.ibm.ws.tx.embeddable_1.0.69.jar=a78efc213dc24300677c21a7db084a6f
-lib/com.ibm.rls.jdbc_1.0.69.jar=0aea6eda8036609e05a10d51476ec5a0
-lib/com.ibm.tx.jta_1.0.69.jar=c56c9fe735fd1955b67db6eeb9c9000f
-lib/com.ibm.ws.tx.jta.extensions_1.0.69.jar=e89bdfb5a5bfd2fd83ca03a05c500203
-lib/com.ibm.tx.util_1.0.69.jar=97e3f25c34c25743c36647ae98f5c5a3
-dev/spi/ibm/com.ibm.websphere.appserver.spi.transaction_1.1.69.jar=c8d7cc1a21301747572b2f4e31697c5a
-lib/com.ibm.ws.recoverylog_1.0.69.jar=fba21f3c8e037d387661ee8a069979db
-lib/com.ibm.ws.cdi.interfaces_1.0.69.jar=db762ef793e57ba315db1fd9227f252c
-lib/com.ibm.ws.transaction_1.0.69.jar=87f56b8e75d118e336fa81d609642950
+#Tue Oct 25 15:35:57 CEST 2022
+lib/features/com.ibm.websphere.appserver.transaction-1.2.mf=8389d0212dc46f416d6cd34a001145fc
+lib/com.ibm.tx.jta_1.0.70.jar=0a1accfa95d0d13494dab7fcf7df22ed
+dev/spi/ibm/javadoc/com.ibm.websphere.appserver.spi.transaction_1.1-javadoc.zip=94454f4594e11e0ae74abda5afdc78cd
+lib/com.ibm.ws.cdi.interfaces_1.0.70.jar=35232b369e85f3b259fa865dc4249d56
+lib/com.ibm.tx.util_1.0.70.jar=fec1ec5ab24b2869f5ea6d20a128c296
+dev/spi/ibm/com.ibm.websphere.appserver.spi.transaction_1.1.70.jar=99a64d78b2326fd700765e19e12684a9
+lib/com.ibm.ws.recoverylog_1.0.70.jar=13d83aad8eb8239683255870c8d19a83
+lib/com.ibm.rls.jdbc_1.0.70.jar=12f2501c78cd91489340401e3933d9d4
+lib/com.ibm.ws.tx.jta.extensions_1.0.70.jar=2f31d255054be7f17ad98ebfae130e6e
+lib/com.ibm.ws.tx.embeddable_1.0.70.jar=8ea92af16aa1024611a22d0a2fabd9ea
+lib/com.ibm.ws.transaction_1.0.70.jar=1a45b0d51ba51cf3e74b90f4e05646e8

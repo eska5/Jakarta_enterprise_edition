@@ -1,4 +1,4 @@
-Open Liberty Version 22.0.0.10 - (22.0.0.10-202209121117)
+Open Liberty Version 22.0.0.11 - (22.0.0.11-202210101601)
 
 
 I. CONTROLLING OPEN LIBERTY

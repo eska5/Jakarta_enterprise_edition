@@ -1,0 +1,10 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0     12 26.10.2022, 02:07:17:459 CEST 26.10.2022, 02:20:43:153 CEST java.lang.IllegalStateException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105
+                                                                            - /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_22.10.26_02.07.17.0.log
+     1     12 26.10.2022, 02:07:17:906 CEST 26.10.2022, 02:20:43:154 CEST com.ibm.wsspi.http.channel.exception.WriteBeyondContentLengthException com.ibm.ws.webcontainer.webapp.WebApp.handleError 912
+                                                                            - /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_22.10.26_02.07.17.1.log
+     2     12 26.10.2022, 02:07:18:099 CEST 26.10.2022, 02:20:43:156 CEST java.lang.IllegalStateException com.ibm.ws.webcontainer.webapp.WebApp.reportRecursiveError 985
+                                                                            - /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_22.10.26_02.07.18.0.log
+------+------+---------------------------+---------------------------+---------------------------

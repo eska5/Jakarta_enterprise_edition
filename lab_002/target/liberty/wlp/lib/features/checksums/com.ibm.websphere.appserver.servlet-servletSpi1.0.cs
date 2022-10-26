@@ -1,4 +1,4 @@
-#Sun Oct 23 02:15:26 CEST 2022
-dev/spi/ibm/javadoc/com.ibm.websphere.appserver.spi.servlet_2.9-javadoc.zip=c7596e0c16b24f1637bf54e279466ba6
-lib/features/com.ibm.websphere.appserver.servlet-servletSpi1.0.mf=dfd08e7e44dfe64c536d80eb10a13746
-dev/spi/ibm/com.ibm.websphere.appserver.spi.servlet_2.9.69.jar=14762eb63bb78e17750aa007faba5410
+#Tue Oct 25 15:35:56 CEST 2022
+dev/spi/ibm/javadoc/com.ibm.websphere.appserver.spi.servlet_2.9-javadoc.zip=120dfa7b183c779c1de652347003f62d
+lib/features/com.ibm.websphere.appserver.servlet-servletSpi1.0.mf=333ee92c1e26e477da3aaadebd4d43a0
+dev/spi/ibm/com.ibm.websphere.appserver.spi.servlet_2.9.70.jar=d23e84571d68002a6218034ad076c747

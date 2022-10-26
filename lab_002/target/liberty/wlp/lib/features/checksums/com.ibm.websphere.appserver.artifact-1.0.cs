@@ -1,14 +1,14 @@
-#Sun Oct 23 02:15:25 CEST 2022
-lib/com.ibm.ws.artifact.equinox.module_1.0.69.jar=f5e44f3d32a828d54f15c84181cef4fa
-lib/com.ibm.ws.classloading.configuration_1.0.69.jar=dd9740a66b62f74228402ee09339152d
-lib/com.ibm.ws.artifact_1.0.69.jar=d17f48c44099c7a2a23b960a093afa16
-lib/com.ibm.ws.adaptable.module_1.0.69.jar=5d1f3ae679faeeec0b357ff5f5b53790
-lib/com.ibm.ws.artifact.file_1.0.69.jar=c8d36fd8b18dd405f757ed8cde93bcaf
-lib/com.ibm.ws.artifact.loose_1.0.69.jar=d8b90c594d762a200595994fce79e6d6
-dev/spi/ibm/javadoc/com.ibm.websphere.appserver.spi.artifact_1.2-javadoc.zip=5092b4e924c17351e06d349cde042b4f
-lib/com.ibm.ws.artifact.url_1.0.69.jar=8a4441f0da9e157a69f6123534752096
-lib/features/com.ibm.websphere.appserver.artifact-1.0.mf=53dd8936ccd4e04fdc834e2b46a0dd45
-dev/spi/ibm/com.ibm.websphere.appserver.spi.artifact_1.2.69.jar=b0c9c58c92a4eef06c0cd3308b82134d
-lib/com.ibm.ws.artifact.overlay_1.0.69.jar=cf45f0e56b6601495218328c7df7e543
-lib/com.ibm.ws.artifact.bundle_1.0.69.jar=d5a11827012ef7e0afa3b1463b89bc1c
-lib/com.ibm.ws.artifact.zip_1.0.69.jar=9100c346e7b8fe27458e2b6c6a3862f5
+#Tue Oct 25 15:35:54 CEST 2022
+lib/com.ibm.ws.artifact.url_1.0.70.jar=e3ae73fc99c8652a6fb037c0651ae1d1
+lib/com.ibm.ws.artifact.equinox.module_1.0.70.jar=58ba5e8d09f21432a5c0cc1cf22f9662
+lib/com.ibm.ws.artifact.bundle_1.0.70.jar=43f6bad99358a50d40e875c7e8a3673b
+lib/com.ibm.ws.artifact.zip_1.0.70.jar=77b1b2633874aa0ccf3c740e7ac4d649
+dev/spi/ibm/com.ibm.websphere.appserver.spi.artifact_1.2.70.jar=fc248a0bcf357e8e7570a1e0bf5ff4fe
+dev/spi/ibm/javadoc/com.ibm.websphere.appserver.spi.artifact_1.2-javadoc.zip=5d4639b43fb3db395bd56cf50ab3eb16
+lib/features/com.ibm.websphere.appserver.artifact-1.0.mf=df628c4ad4d7fb9b2be929ea9286aacb
+lib/com.ibm.ws.artifact.overlay_1.0.70.jar=c9584fb949eec7173e41c54afe2d6571
+lib/com.ibm.ws.adaptable.module_1.0.70.jar=7d240e8d4a36f15d97e3b4ade962f6a0
+lib/com.ibm.ws.classloading.configuration_1.0.70.jar=5e9634838798c3e1ead4f39d8006a2d9
+lib/com.ibm.ws.artifact_1.0.70.jar=69dbd1ca903390ab1187a9fdb8176431
+lib/com.ibm.ws.artifact.file_1.0.70.jar=b29da4568f3888730b7780905bed5f00
+lib/com.ibm.ws.artifact.loose_1.0.70.jar=1d2a59fd19c746f95fb4eb79bdf2f406

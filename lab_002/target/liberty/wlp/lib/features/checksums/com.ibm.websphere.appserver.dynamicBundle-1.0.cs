@@ -1,3 +1,3 @@
-#Sun Oct 23 02:15:25 CEST 2022
-lib/features/com.ibm.websphere.appserver.dynamicBundle-1.0.mf=e7f5a5bd2f8946db57d49dff285b4215
-lib/com.ibm.ws.dynamic.bundle_1.0.69.jar=2fac4737974e3c0444120e0b9641098a
+#Tue Oct 25 15:35:55 CEST 2022
+lib/features/com.ibm.websphere.appserver.dynamicBundle-1.0.mf=ba3adc4b86042216fdcdc634b5426c28
+lib/com.ibm.ws.dynamic.bundle_1.0.70.jar=5a50e197216095897671dba84917a65d

@@ -1,12 +1,16 @@
 package servlet;
 
+import classes.Pokemon;
 import classes.Trainer;
 import classes.Type;
 import dto.Trainer.GetTrainerResponse;
 import dto.Trainer.GetTrainersResponse;
+import dto.Type.CreateTypeRequest;
 import dto.Type.GetTypeResponse;
 import dto.Type.GetTypesResponse;
+import dto.Type.UpdateTypeRequest;
 import lombok.SneakyThrows;
+import service.PokemonService;
 import service.TrainerService;
 import service.TypeService;
 
@@ -21,7 +25,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 import java.io.IOException;
+import java.net.http.HttpHeaders;
 import java.util.Optional;
+
 
 @WebServlet(urlPatterns = {
         TypeServlet.Paths.TYPE + "/*",
@@ -30,10 +36,12 @@ import java.util.Optional;
 @MultipartConfig(maxFileSize = 400 * 1024)
 public class TypeServlet extends HttpServlet {
     private final TypeService typeService;
+    private final PokemonService pokemonService;
 
     @Inject
-    public TypeServlet(TypeService typeService){
+    public TypeServlet(TypeService typeService, PokemonService pokemonService){
         this.typeService = typeService;
+        this.pokemonService = pokemonService;
     }
 
     public static class Paths {
@@ -50,11 +58,10 @@ public class TypeServlet extends HttpServlet {
         if (TypeServlet.Paths.TYPE.equals(servletPath)) {
             if (isTypeIconInPath(request, response)) {
                 getTypesIcon(request, response);
-            } else {
-                getType(request, response);
             }
+                getType(request, response);
         } else if (TypeServlet.Paths.TYPES.equals(servletPath)) {
-            getType(request, response);
+            getTypes(request, response);
         } else {
             response.sendError(HttpServletResponse.SC_BAD_REQUEST);
         }
@@ -64,27 +71,34 @@ public class TypeServlet extends HttpServlet {
     protected void doPut(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         String servletPath = request.getServletPath();
 
-        if (TypeServlet.Paths.TYPE.equals(servletPath)){
+        if (TypeServlet.Paths.TYPE.equals(servletPath)) {
             if (isTypeIconInPath(request, response)) {
                 putTypeIcon(request, response);
-            } else {
-                response.sendError(HttpServletResponse.SC_BAD_REQUEST);
             }
+            putType(request, response);
         } else {
             response.sendError(HttpServletResponse.SC_BAD_REQUEST);
         }
     }
 
     @Override
-    protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        String servletPath = request.getServletPath();
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        String servletPath = ServletUtility.parseRequestPath(request);
 
-        if (TypeServlet.Paths.TYPE.equals(servletPath)){
+        if (TypeServlet.Paths.TYPES.equals(request.getServletPath())) {
             if (isTypeIconInPath(request, response)) {
-                deleteTypeIcon(request, response);
-            } else {
-                response.sendError(HttpServletResponse.SC_BAD_REQUEST);
+                putTypeIcon(request, response);
             }
+            postType(request, response);
+        }
+    }
+
+    @Override
+    protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        String path = ServletUtility.parseRequestPath(request);
+
+        if (TypeServlet.Paths.TYPE.equals(request.getServletPath())){
+            deleteType(request, response);
         } else {
             response.sendError(HttpServletResponse.SC_BAD_REQUEST);
         }
@@ -94,12 +108,11 @@ public class TypeServlet extends HttpServlet {
         String typeName = ServletUtility.parseRequestPath(request).replaceAll("/","");
         Optional<Type> type = typeService.find(typeName);
         if (type.isPresent()){
+            type.get().setPokemons(pokemonService.findAllForType(typeName));
             response.setContentType("application/json");
             response.getWriter()
                     .write(jsonb.toJson(GetTypeResponse.entityToDtoMapper().apply(type.get())));
             response.setStatus(HttpServletResponse.SC_OK);
-        } else {
-            response.sendError(HttpServletResponse.SC_NOT_FOUND);
         }
     }
 
@@ -117,7 +130,7 @@ public class TypeServlet extends HttpServlet {
             try {
                 response.setContentLength(type.get().getIcon().length);
                 response.getOutputStream().write(type.get().getIcon());
-                response.addHeader("Content-Type", "image/jpeg");
+//                response.addHeader("Content-Type", "image/jpeg");
                 response.setStatus(HttpServletResponse.SC_OK);
             } catch (NullPointerException ex) {
                 response.getWriter().write("This type does not have an icon");
@@ -144,8 +157,6 @@ public class TypeServlet extends HttpServlet {
                 }
                 typeService.updateIcon(login, icon.getInputStream());
             }
-        } else {
-            response.sendError(HttpServletResponse.SC_NOT_FOUND);
         }
     }
 
@@ -160,28 +171,69 @@ public class TypeServlet extends HttpServlet {
             } else {
                 response.getWriter().write("This trainer does not have profile picture");
                 response.addHeader("Content-Type", "application/json");
-                response.setStatus(HttpServletResponse.SC_NOT_FOUND);
             }
-        } else {
-            response.sendError(HttpServletResponse.SC_NOT_FOUND);
         }
     }
 
     private Boolean isTypeIconInPath(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        String[] urlParts = request.getPathInfo().split("/");
+        String[] urlParts = new String[1];
+        try {
+            System.out.println(request);
+            if (request.getPathInfo() != null) {
+                urlParts = request.getPathInfo().split("/");
+            }
+        } catch (IllegalArgumentException ex){
+            System.out.println("POMOCY");
+        }
+
         if (urlParts.length == 3) {
             if (TypeServlet.Paths.ICON.equals(urlParts[2])) {
                 return true;
             } else {
-                response.sendError(HttpServletResponse.SC_BAD_REQUEST);
                 return false;
             }
         } else if (urlParts.length == 2) {
             return false;
         } else {
-            response.sendError(HttpServletResponse.SC_BAD_REQUEST);
             return false;
         }
     }
 
+    private void deleteType(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String code = ServletUtility.parseRequestPath(request).replaceAll("/","");
+        Optional<Type> type = typeService.find(code);
+
+        if (type.isPresent()){
+            typeService.delete(type.get().getTypeName());
+            response.setStatus(HttpServletResponse.SC_NO_CONTENT);
+        } else {
+            response.setStatus(HttpServletResponse.SC_NOT_FOUND);
+        }
+    }
+
+    private void putType(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String code = ServletUtility.parseRequestPath(request).replaceAll("/","");
+        Optional<Type> type = typeService.find(code);
+
+        if (type.isPresent()){
+            UpdateTypeRequest requestBody = jsonb.fromJson(request.getInputStream(), UpdateTypeRequest.class);
+            UpdateTypeRequest.dtoToEntityUpdater().apply(type.get(), requestBody);
+            typeService.update(type.get());
+            response.setStatus(HttpServletResponse.SC_NO_CONTENT);
+        }
+    }
+
+    private void postType(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        CreateTypeRequest requestBody = jsonb.fromJson(request.getInputStream(), CreateTypeRequest.class);
+
+        Type type = CreateTypeRequest
+                .dtoToEntityMapper()
+                .apply(requestBody);
+        try {
+            typeService.create(type);
+            response.setStatus(HttpServletResponse.SC_CREATED);
+        }  catch (IllegalArgumentException ex) {
+            response.sendError(HttpServletResponse.SC_BAD_REQUEST);
+        }
+    }
 }

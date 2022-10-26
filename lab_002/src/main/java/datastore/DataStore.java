@@ -5,6 +5,7 @@ import classes.Trainer;
 import classes.Type;
 import lombok.extern.java.Log;
 import serialization.CloningUtility;
+import servlet.PokemonServlet;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.util.HashSet;
@@ -72,6 +73,7 @@ public class DataStore {
     }
 
     public synchronized void createPokemon(Pokemon pokemon) throws IllegalArgumentException {
+        System.out.println(pokemon);
         findPokemon(pokemon.getName()).ifPresentOrElse(
                 original -> {
                     throw new IllegalArgumentException(
@@ -90,6 +92,16 @@ public class DataStore {
                     throw new IllegalArgumentException(
                             String.format("User with login \"%s\" does not exist", pokemon.getName()));
                 });
+    }
+
+    public void deletePokemon(String name) throws IllegalArgumentException {
+        findPokemon(name).ifPresentOrElse(
+                original -> pokemons.remove(original),
+                () -> {
+                    throw new IllegalArgumentException(
+                            String.format("User with login \"%s\" does not exist", name));
+                }
+        );
     }
 //    END OF POKEMON
 
@@ -128,6 +140,21 @@ public class DataStore {
                             String.format("User with login \"%s\" does not exist", type.getTypeName()));
                 });
     }
+
+    public synchronized void deleteType(String name) throws IllegalArgumentException {
+        for (Pokemon pokemon : findAllPokemons()){
+            if (pokemon.getType().getTypeName().equals(name)){
+                deletePokemon(pokemon.getName());
+            }
+        }
+        findType(name).ifPresentOrElse(
+                original -> types.remove(original),
+                () -> {
+                    throw new IllegalArgumentException(
+                            String.format("The Type with name \"%s\" does not exist", name));
+                });
+    }
+
 //    END OF TYPE
 
 

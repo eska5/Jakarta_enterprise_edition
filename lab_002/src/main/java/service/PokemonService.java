@@ -4,6 +4,7 @@ import classes.Pokemon;
 import dto.Pokemon.GetPokemonsResponse;
 import lombok.NoArgsConstructor;
 import repository.PokemonRepository;
+import repository.TypeRepository;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -17,10 +18,12 @@ import java.util.Optional;
 @NoArgsConstructor
 public class PokemonService {
     private PokemonRepository pokemonRepository;
+    private TypeRepository typeRepository;
 
     @Inject
-    public PokemonService(PokemonRepository pokemonRepository){
+    public PokemonService(PokemonRepository pokemonRepository, TypeRepository typeRepository){
         this.pokemonRepository = pokemonRepository;
+        this.typeRepository = typeRepository;
     }
 
     public Optional<Pokemon> find(String name) {
@@ -29,6 +32,14 @@ public class PokemonService {
 
     public void create(Pokemon pokemon) {
         pokemonRepository.create(pokemon);
+    }
+
+    public void update(Pokemon pokemon) {
+        pokemonRepository.update(pokemon);
+    }
+
+    public void delete(String name) {
+        pokemonRepository.delete(pokemonRepository.find(name).orElseThrow());
     }
 
     public List<Pokemon> findAll(){
@@ -51,5 +62,13 @@ public class PokemonService {
             pokemon.setPhoto(null);
             pokemonRepository.update(pokemon);
         });
+    }
+
+    public List<Pokemon> findAllForType(String typeName) {
+        return pokemonRepository.findAllByType(typeRepository.find(typeName).orElseThrow());
+    }
+
+    public Optional<Pokemon> findForType(String var1, String typeName) {
+        return pokemonRepository.findByVarAndType(var1, typeRepository.find(typeName).orElseThrow());
     }
 }

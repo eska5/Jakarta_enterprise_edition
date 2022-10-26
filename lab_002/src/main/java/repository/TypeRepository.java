@@ -34,7 +34,7 @@ public class TypeRepository implements Repository<Type, String> {
 
     @Override
     public void delete(Type entity) {
-        throw new UnsupportedOperationException("Nie mam jeszcze :(");
+        store.deleteType(entity.getTypeName());
     }
 
     @Override

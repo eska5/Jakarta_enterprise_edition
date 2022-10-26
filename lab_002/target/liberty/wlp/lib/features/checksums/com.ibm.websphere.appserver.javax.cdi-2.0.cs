@@ -1,3 +1,3 @@
-#Sun Oct 23 02:15:26 CEST 2022
-lib/features/com.ibm.websphere.appserver.javax.cdi-2.0.mf=24fd43d12e1705867d8434816e571aea
-dev/api/spec/com.ibm.websphere.javaee.cdi.2.0_1.0.69.jar=32ccf46d4a16f9eeace7db125a7be36c
+#Tue Oct 25 15:35:55 CEST 2022
+lib/features/com.ibm.websphere.appserver.javax.cdi-2.0.mf=d6d2d1c5396d5f1df23b01efe36947f6
+dev/api/spec/com.ibm.websphere.javaee.cdi.2.0_1.0.70.jar=1d2ae8f85780bdc6a252cf8a7c104046

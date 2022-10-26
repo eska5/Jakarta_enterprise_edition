@@ -2,12 +2,16 @@ package repository;
 
 import classes.Pokemon;
 import classes.Trainer;
+import classes.Type;
 import datastore.DataStore;
+import dto.Pokemon.UpdatePokemonRequest;
+import serialization.CloningUtility;
 
 import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Dependent
 public class PokemonRepository implements Repository<Pokemon, String> {
@@ -35,7 +39,7 @@ public class PokemonRepository implements Repository<Pokemon, String> {
 
     @Override
     public void delete(Pokemon entity) {
-        throw new UnsupportedOperationException("Nie mam jeszcze :(");
+        store.deletePokemon(entity.getName());
     }
 
     @Override
@@ -43,4 +47,18 @@ public class PokemonRepository implements Repository<Pokemon, String> {
         store.updatePokemon(entity);
     }
 
+    public Optional<Pokemon> findByVarAndType(String var, Type type) {
+        return store.findAllPokemons().stream()
+                .filter(pokemon -> pokemon.getType().equals(type))
+                .filter(pokemon -> pokemon.getName().equals(var))
+                .findFirst()
+                .map(CloningUtility::clone);
+    }
+
+    public List<Pokemon> findAllByType(Type type) {
+        return store.findAllPokemons().stream()
+                .filter(pokemon -> pokemon.getType().equals(type))
+                .map(CloningUtility::clone)
+                .collect(Collectors.toList());
+    }
 }

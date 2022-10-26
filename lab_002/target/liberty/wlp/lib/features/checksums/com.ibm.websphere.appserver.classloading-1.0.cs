@@ -1,6 +1,6 @@
-#Sun Oct 23 02:15:26 CEST 2022
-dev/spi/ibm/com.ibm.websphere.appserver.spi.classloading_1.4.69.jar=344ca241f9a1d243e91e58b311a1587c
-lib/com.ibm.ws.classloading_1.1.69.jar=14775065d7535fd9f59107e47338e08d
-dev/api/spec/com.ibm.websphere.javaee.activity.1.0_1.0.69.jar=dd3f2a9205ed28d276973adb44d67c1c
-dev/spi/ibm/javadoc/com.ibm.websphere.appserver.spi.classloading_1.4-javadoc.zip=dbca81f56af1296d461a135d40c314f8
-lib/features/com.ibm.websphere.appserver.classloading-1.0.mf=540e639bbffc62c92e0b4c4b50775e13
+#Tue Oct 25 15:35:55 CEST 2022
+dev/api/spec/com.ibm.websphere.javaee.activity.1.0_1.0.70.jar=d0833b37ef5c72a0b20198c6bde778e7
+dev/spi/ibm/javadoc/com.ibm.websphere.appserver.spi.classloading_1.4-javadoc.zip=e8dd5a733f540cdfadf9f9fc71eff1d8
+lib/features/com.ibm.websphere.appserver.classloading-1.0.mf=db7d34d3dace75210de721800fa743b9
+lib/com.ibm.ws.classloading_1.1.70.jar=54400e848ab0edf783f49ececb51c3eb
+dev/spi/ibm/com.ibm.websphere.appserver.spi.classloading_1.4.70.jar=a5565d222f9f199d0f9500f9edf3b34a

@@ -1,4 +1,4 @@
-#Sun Oct 23 02:15:26 CEST 2022
+#Tue Oct 25 15:35:56 CEST 2022
 dev/api/ibm/schema/ibm-common-bnd_1_1.xsd=62ecd62d0312dd04f8f1770512a0d43b
 dev/api/ibm/schema/ibm-web-bnd_1_2.xsd=93308fa33620acb4eebd1f8c4c60becf
 dev/api/ibm/schema/ibm-ejb-jar-bnd_1_0.xsd=9a25a42e2b231d766f8af9e7d7621fe5
@@ -15,7 +15,7 @@ dev/api/ibm/schema/ibm-web-bnd_1_1.xsd=08ede29218ef237106191fb9c28cd5b6
 dev/api/ibm/schema/ibm-common-bnd_1_0.xsd=157f21cb9146394dc6456045bc0c1947
 dev/api/ibm/schema/ibm-ejb-jar-ext_1_1.xsd=04bfa4f8e528bf4ca52553ee83359eb6
 dev/api/ibm/schema/ibm-application-bnd_1_0.xsd=49a0f999d5b09868787614c2904104c4
-lib/features/com.ibm.websphere.appserver.javaeeddSchema-1.0.mf=2e17b941fd02d51626d0ee689e014b14
+lib/features/com.ibm.websphere.appserver.javaeeddSchema-1.0.mf=89367702a6b38f4d0c13105854e40688
 dev/api/ibm/schema/ibm-application-bnd_1_2.xsd=13bd3df85491adaba3955a2043c93a53
 dev/api/ibm/schema/ibm-application-ext_1_0.xsd=44c82d8b3e8b05bb41a09bb2e095ca13
 dev/api/ibm/schema/ibm-ejb-jar-bnd_1_1.xsd=d3316b86921c47fd7e5c9f705accf60e

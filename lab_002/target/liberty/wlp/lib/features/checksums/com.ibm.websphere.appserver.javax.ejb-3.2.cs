@@ -1,3 +1,3 @@
-#Sun Oct 23 02:15:27 CEST 2022
-dev/api/spec/com.ibm.websphere.javaee.ejb.3.2_1.0.69.jar=3416f86529b199cff96f64be0bc86cb1
-lib/features/com.ibm.websphere.appserver.javax.ejb-3.2.mf=21c9fe029e290232527d66dd0395332e
+#Tue Oct 25 15:35:57 CEST 2022
+dev/api/spec/com.ibm.websphere.javaee.ejb.3.2_1.0.70.jar=d7b823ac57ec86de943a00bf95f24f53
+lib/features/com.ibm.websphere.appserver.javax.ejb-3.2.mf=b12caf2e5632ece5232ac35bbd3d60e2

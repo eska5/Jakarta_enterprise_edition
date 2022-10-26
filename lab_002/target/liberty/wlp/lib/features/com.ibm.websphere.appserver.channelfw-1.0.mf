@@ -1,6 +1,6 @@
 Created-By: 11.0.14.1 (International Business Machines Corporation)
 IBM-API-Package: com.ibm.websphere.endpoint; type="ibm-api"
-IBM-AppliesTo: io.openliberty;productVersion="22.0.0.10"
+IBM-AppliesTo: io.openliberty;productVersion="22.0.0.11"
 IBM-Feature-Version: 2
 IBM-InstallTo: core
 IBM-License-Agreement: wlp/lafiles/LA

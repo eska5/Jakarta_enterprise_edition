@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Pokedex"/>
+        <meta name="keywords" content="Pokedex"/>
+        <meta name="author" content="Jakub Sachajko"/>
+        <title>Pokedex</title>
+        <link rel="stylesheet" href="../styles.css"/>
+        <link rel="stylesheet" href="type_view.css"/>
+        <script src="../script.js" defer="defer"></script>
+        <script src="type_view.js" defer="defer"></script>
+    </head>
+    <body>
+    <div class="container">
+        <header class="header">
+            <h1>Pokedex</h1>
+        </header>
+
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="../index.html">main</a></li>
+                <li><a href="../about/about.html">about this project</a></li>
+                <li><a href="../type_list/type_list.html">pokemons</a></li>
+            </ul>
+        </nav>
+
+            <section class="main-section">
+                <article class="text--justified">
+                    <header><h2><span id="name">Type View</span></h2></header>
+                    <div class="character__grid">
+                        <div class="type_typeName"><span id="typeName">0</span></div>
+                        <div class="type_multiplier"><span id="multiplier">0</span></div>
+                        <div class="type_combatList"><span id="combatList">0</span></div>
+                        <div class="type_icon"><img id="icon" src="#" width="100" height="100"/></div>
+                    </div>
+                </article>
+            </section>
+            <section class="pokemon-list">
+                <article class="text--justified">
+                <header><h2>Pokemons</h2></header>
+                <table class="data-table">
+                    <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>view</th>
+                        <th>edit</th>
+                        <th>delete</th>
+                    </tr>
+                    </thead>
+                    <tbody id="charactersTableBody">
+                    <tr>
+                        <td>name</td>
+                        <td><a href="#">view</a></td>
+                        <td><a href="#">edit</a></td>
+                        <td>
+                            <button class="ui-button ui-control" >delete</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                </article>
+            </section>
+        <div id="sectiondel"></div>
+        <div id="addButton"></div>
+
+        <footer class="footer">
+            <p>Copyright &copy; 2022, Jakub Sachajko</p>
+        </footer>
+    </div>
+    </body>
+</html>

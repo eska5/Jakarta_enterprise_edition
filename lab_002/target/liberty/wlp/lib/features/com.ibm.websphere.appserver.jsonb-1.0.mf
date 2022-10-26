@@ -5,7 +5,7 @@ IBM-API-Package: javax.json.bind; type=spec,
  javax.json.bind.config; type=spec,
  javax.json.bind.serializer; type=spec,
  javax.json.bind.spi; type=spec
-IBM-AppliesTo: io.openliberty;productVersion="22.0.0.10"
+IBM-AppliesTo: io.openliberty;productVersion="22.0.0.11"
 IBM-Feature-Version: 2
 IBM-InstallTo: core
 IBM-License-Agreement: wlp/lafiles/LA

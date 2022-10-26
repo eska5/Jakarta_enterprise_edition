@@ -712,7 +712,12 @@ serverEnvAndJVMOptions()
 
   # Avoids HeadlessException on all platforms and Liberty JVMs appearing as applications and stealing focus on Mac.
   # Declare allowAttachSelf=true so that the VM will permit a late self attach if localConnector-1.0 is enabled
-  JVM_OPTIONS_QUOTED="-Djava.awt.headless=true -Djdk.attach.allowAttachSelf=true"
+  # need -Dcom.ibm.tools.attach.enable=yes for java 11 on z/OS
+  if [ "${uname}" = OS/390 ]; then
+    JVM_OPTIONS_QUOTED="-Djava.awt.headless=true -Djdk.attach.allowAttachSelf=true -Dcom.ibm.tools.attach.enable=yes"
+  else
+    JVM_OPTIONS_QUOTED="-Djava.awt.headless=true -Djdk.attach.allowAttachSelf=true"
+  fi
   SERVER_JVM_OPTIONS_QUOTED=${JVM_OPTIONS_QUOTED}
 
   rc=0
@@ -857,9 +862,9 @@ readServerEnv()
 criuEnvDefaults() {
   if [ -z "$GLIBC_TUNABLES" ]
   then
-    GLIBC_TUNABLES=glibc.cpu.hwcaps=-XSAVEC_Usable,-XSAVE_Usable,-AVX2_Usable,-ERMS,-AVX_Usable,-AVX_Fast_Unaligned_Load
+    GLIBC_TUNABLES=glibc.cpu.hwcaps=-XSAVEC,-XSAVE,-AVX2,-ERMS,-AVX,-AVX_Fast_Unaligned_Load
   else
-    GLIBC_TUNABLES=${GLIBC_TUNABLES}:glibc.cpu.hwcaps=-XSAVEC_Usable,-XSAVE_Usable,-AVX2_Usable,-ERMS,-AVX_Usable,-AVX_Fast_Unaligned_Load
+    GLIBC_TUNABLES=${GLIBC_TUNABLES}:glibc.cpu.hwcaps=-XSAVEC,-XSAVE,-AVX2,-ERMS,-AVX,-AVX_Fast_Unaligned_Load
   fi
   export GLIBC_TUNABLES
   export LD_BIND_NOT=on
@@ -987,7 +992,9 @@ javaCmd()
     # syslog is disabled for checkpoint to allow jvm dumps before a checkpoint.
     # We expect an enhancement to OpenJ9 to allow syslog to be enabled on restore.
     # When that becomes available we can remove the -Xsyslog:none option
-    JVM_OPTIONS_QUOTED="$JVM_OPTIONS_QUOTED -XX:+EnableCRIUSupport -XX:+CRIURestoreNonPortableMode -Xsyslog:none $X_WLP_IMMUTABLE_VARS"
+    # -Djdk.nativeEC=false disabled nativeEC until some issues are resolved around portability
+    JVM_OPTIONS_QUOTED="$JVM_OPTIONS_QUOTED -XX:+EnableCRIUSupport -XX:+CRIURestoreNonPortableMode -Xsyslog:none -Djdk.nativeEC=false $X_WLP_IMMUTABLE_VARS"
+
 
     checkCriuUnprivileged
     if [ $DO_CRIU_UNPRIVILEGED = true ]; then
@@ -996,7 +1003,7 @@ javaCmd()
     if [ -n "$CRIU_LOG_LEVEL" ]; then
       # A system property is used here to avoid having to read env on the 
       # checkpoint side. If reading the env from the Java checkpoint side we need
-      # to make the env an immuntable value but we don't want to force the
+      # to make the env an immutable value but we don't want to force the
       # same CRIU_LOG_LEVEL on both the checkpoint and restore side here.
       JVM_OPTIONS_QUOTED="$JVM_OPTIONS_QUOTED -Dio.openliberty.checkpoint.criu.loglevel=$CRIU_LOG_LEVEL"
     fi
@@ -1375,7 +1382,7 @@ criuRestore()
   then
     mkdirs "${X_PID_DIR}"
     rmIfExist "${X_PID_FILE}"
-    criu restore --cpu-cap=none --file-locks --tcp-established --images-dir=${SERVER_OUTPUT_DIR}/workarea/checkpoint/image \
+    criu restore --skip-file-rwx-check --cpu-cap=none --file-locks --tcp-established --images-dir=${SERVER_OUTPUT_DIR}/workarea/checkpoint/image \
       --shell-job --verbosity=${CRIU_LOG_LEVEL} --log-file ${X_LOG_DIR}/checkpoint/restore.log --pidfile ${X_PID_FILE} \
       --restore-detached ${CRIU_EXTRA_ARGS}
     rc=$?
@@ -1403,7 +1410,7 @@ criuRestore()
     trap "exit" INT TERM
     trap "killIfRunning $TAIL_PID" EXIT
 
-    criu restore --cpu-cap=none --file-locks --tcp-established --images-dir=${SERVER_OUTPUT_DIR}/workarea/checkpoint/image \
+    criu restore --skip-file-rwx-check --cpu-cap=none --file-locks --tcp-established --images-dir=${SERVER_OUTPUT_DIR}/workarea/checkpoint/image \
       --shell-job --verbosity=${CRIU_LOG_LEVEL} --log-file ${X_LOG_DIR}/checkpoint/restore.log ${CRIU_EXTRA_ARGS}
     rc=$?
 

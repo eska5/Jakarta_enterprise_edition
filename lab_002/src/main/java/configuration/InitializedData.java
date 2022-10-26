@@ -1,9 +1,11 @@
 package configuration;
 
+import classes.Pokemon;
 import classes.Trainer;
 import classes.Type;
 import classes.enums.Gender;
 import classes.enums.MatchUp;
+import classes.enums.Rarity;
 import digest.Sha256Utility;
 import lombok.SneakyThrows;
 import service.PokemonService;
@@ -16,6 +18,8 @@ import javax.enterprise.event.Observes;
 import javax.inject.Inject;
 import java.io.InputStream;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 @ApplicationScoped
@@ -40,31 +44,71 @@ public class InitializedData {
     private synchronized void init(){
 
         // TYPES
-//
-//        Map<String,MatchUp> testMap =Map.of("woda", MatchUp.weak);
-//        Map<String,MatchUp> testMap2 =Map.of("woda", MatchUp.weak,"ogien", MatchUp.neutral);
-//        Map<String,MatchUp> testMap3 =Map.of("woda", MatchUp.weak, "ziemia", MatchUp.strong,"ogien", MatchUp.neutral);
-//        Type type1 = Type.builder()
-//                .typeName("Ogien")
-//                .multiplier(48)
-//                .combatList(testMap)
-//                .icon(getResourceAsByteArray("/trainerPictures/profile1.jpeg"))
-//                .build();
-//        Type type2 = Type.builder()
-//                .typeName("Ziemia")
-//                .multiplier(23)
-//                .combatList(testMap2)
-//                .icon(getResourceAsByteArray("/trainerPictures/profile2.jpeg"))
-//                .build();
-//        Type type3 = Type.builder()
-//                .typeName("Woda")
-//                .multiplier(34.5)
-//                .combatList(testMap3)
-//                .icon(getResourceAsByteArray("/trainerPictures/profile3.jpeg"))
-//                .build();
-//        typeService.create(type1);
-//        typeService.create(type2);
-//        typeService.create(type3);
+        List<Pokemon> emptyPokemonList = new ArrayList<Pokemon>();
+        Type type1 = Type.builder()
+                .typeName("Ogien")
+                .multiplier(48)
+                .combatList(MatchUp.weak)
+                .pokemons(emptyPokemonList)
+                .icon(getResourceAsByteArray("/trainerPictures/profile1.jpeg"))
+                .build();
+        Type type2 = Type.builder()
+                .typeName("Ziemia")
+                .multiplier(23)
+                .combatList(MatchUp.neutral)
+                .pokemons(emptyPokemonList)
+                .icon(getResourceAsByteArray("/trainerPictures/profile2.jpeg"))
+                .build();
+        Type type3 = Type.builder()
+                .typeName("Woda")
+                .multiplier(34.5)
+                .combatList(MatchUp.strong)
+                .pokemons(emptyPokemonList)
+                .icon(getResourceAsByteArray("/trainerPictures/profile3.jpeg"))
+                .build();
+        typeService.create(type1);
+        typeService.create(type2);
+        typeService.create(type3);
+
+        //  POKEMON
+        Pokemon pokemon = Pokemon.builder()
+                .name("Charizard")
+                .specialAbility("SMASH")
+                .power(2137.0)
+                .rarity(Rarity.epic)
+                .type(type1)
+                .photo(getResourceAsByteArray("/trainerPictures/profile3.jpeg"))
+                .build();
+        Pokemon pokemon2 = Pokemon.builder()
+                .name("pikachu")
+                .specialAbility("electrocute")
+                .power(650.0)
+                .rarity(Rarity.legendary)
+                .type(type1)
+                .photo(getResourceAsByteArray("/trainerPictures/profile2.jpeg"))
+                .build();
+        Pokemon pokemon3 = Pokemon.builder()
+                .name("squirtle")
+                .specialAbility("water_punch")
+                .power(220.0)
+                .rarity(Rarity.common)
+                .type(type2)
+                .photo(getResourceAsByteArray("/trainerPictures/profile1.jpeg"))
+                .build();
+        Pokemon pokemon4 = Pokemon.builder()
+                .name("turtwig")
+                .specialAbility("ground_hog")
+                .power(120.0)
+                .rarity(Rarity.uncommon)
+                .type(type3)
+                .photo(getResourceAsByteArray("/trainerPictures/profile4.jpeg"))
+                .build();
+
+        pokemonService.create(pokemon);
+        pokemonService.create(pokemon2);
+        pokemonService.create(pokemon3);
+        pokemonService.create(pokemon4);
+
 
         //  TRAINERS
         Trainer jakub = Trainer.builder()

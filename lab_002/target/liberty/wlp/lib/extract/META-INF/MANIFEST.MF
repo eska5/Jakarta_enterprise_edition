@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Archive-Content-Type: install
 Archive-Root: wlp/
-Build-Identifier: SNAPSHOT-Mon Sep 12 10:19:33 UTC 2022
+Build-Identifier: SNAPSHOT-Mon Oct 10 15:03:52 UTC 2022
 Bundle-Copyright: Copyright (c) 1999, 2022 IBM Corporation and others.
   All rights reserved. This program and the accompanying materials are
   made available under the terms of the Eclipse Public License v1.0 wh
@@ -18,7 +18,7 @@ Bundle-SCM: connection=scm:git:https://github.com/OpenLiberty/open-lib
  e/release
 Bundle-SymbolicName: wlp.lib.extract
 Bundle-Vendor: IBM
-Bundle-Version: 1.0.69.cl221020220912-1100
+Bundle-Version: 1.0.70.cl221120221010-1540
 Can-Redefine-Classes: false
 Can-Retransform-Classes: true
 Created-By: 11.0.14.1 (International Business Machines Corporation)

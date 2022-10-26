@@ -1,3 +1,3 @@
-#Sun Oct 23 02:15:27 CEST 2022
-lib/features/io.openliberty.servlet.api-3.0.mf=56259369cbbc2afcf39fd9908d02b67f
-dev/api/spec/com.ibm.websphere.javaee.servlet.3.0_1.0.69.jar=4bf484800731f33e40651eebc83a059d
+#Tue Oct 25 15:35:57 CEST 2022
+lib/features/io.openliberty.servlet.api-3.0.mf=0a8ef339f8cfc5a22bbfbc7ac017a17e
+dev/api/spec/com.ibm.websphere.javaee.servlet.3.0_1.0.70.jar=3ec083a991da4c24cd3584aa5f4b241a

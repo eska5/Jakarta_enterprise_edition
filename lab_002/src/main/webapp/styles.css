@@ -1,6 +1,6 @@
 body {
-    background-color: #96C4D8;
-    font-family: Georgia serif;
+    background-color: #caa5e0;
+    font-family: Arial;
 }
 
 .container {
@@ -9,20 +9,21 @@ body {
 }
 
 .header {
-    text-align: right;
-    background: #548BA1;
-    color: #214753;
+    align-content: center;
+    text-align: center;
+    background: #8254a1;
+    color: #401248;
     font-weight: bold;
 }
 
 .header h1 {
+    align-content: center;
     margin: 0;
     padding: 10px;
-    font-style: italic;
 }
 
 .navigation-bar {
-    background-color: #548BA1;
+    background-color: #1a1919;
 }
 
 .navigation-bar ul {
@@ -40,18 +41,18 @@ body {
     display: inline-block;
     padding: 5px 10px;
     text-decoration: none;
-    color: #214753;
+    color: #b964e8;
     font-weight: bold;
 }
 
 .navigation-bar a:hover {
-    background-color: #214753;
-    color: #548BA1;
+    background-color: #794488;
+    color: #000000;
 }
 
 .main-section {
     padding: 10px;
-    background-color: #E0EEF7;
+    background-color: #d5cb60;
 }
 
 .footer {
@@ -76,8 +77,8 @@ body {
 }
 
 .ui-control {
-    border-color: #214753;
-    background-color: #E0EEF7;
+    border-color: #3d2153;
+    background-color: #b4d5a5;
     border-width: 1px;
     padding: 1px;
     font-family: Georgia, serif;
@@ -116,10 +117,10 @@ body {
 
 .data-table thead {
     font-weight: bold;
-    background-color: #548BA1;
-    color: #214753;
+    background-color: #8554a1;
+    color: #270d38;
 }
 
 .data-table tbody tr:hover {
-    background-color: #96C4D8;
+    background-color: #efe5f3;
 }

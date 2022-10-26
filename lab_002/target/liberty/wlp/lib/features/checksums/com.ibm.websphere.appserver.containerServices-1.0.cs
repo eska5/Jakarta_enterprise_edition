@@ -1,8 +1,8 @@
-#Sun Oct 23 02:15:25 CEST 2022
-lib/com.ibm.ws.container.service_1.0.69.jar=e52656dc5acd25a5338cb5f662960dbc
-lib/features/com.ibm.websphere.appserver.containerServices-1.0.mf=78d529eb013f9644b3b2b6b8a20268fb
-dev/spi/ibm/com.ibm.websphere.appserver.spi.containerServices_4.0.69.jar=7605850302904407bfdf34cc30420ceb
-dev/spi/ibm/javadoc/com.ibm.websphere.appserver.spi.containerServices_4.0-javadoc.zip=2c83a157436a9594f4fa86bcdf80ef8e
-lib/com.ibm.ws.javaee.version_1.0.69.jar=6eaa62401cfec570ce8acbffe2c87bd6
-lib/com.ibm.ws.serialization_1.0.69.jar=4252177abcdbf9c5bc710cc636d787d5
-lib/com.ibm.ws.resource_1.0.69.jar=da0230c1db67fe7eec8bb92132820670
+#Tue Oct 25 15:35:55 CEST 2022
+lib/com.ibm.ws.container.service_1.0.70.jar=a30af02b8141cac9fea4ea3e19406dcc
+lib/features/com.ibm.websphere.appserver.containerServices-1.0.mf=ee3f0b6d258c5e9ca2e4843b1d1ed46a
+lib/com.ibm.ws.javaee.version_1.0.70.jar=7fafe3835387d2087c7cad71b61a5247
+dev/spi/ibm/javadoc/com.ibm.websphere.appserver.spi.containerServices_4.0-javadoc.zip=456cd45d3c608fc72e80e8fc8e28a968
+lib/com.ibm.ws.serialization_1.0.70.jar=908af473bf35e7c92be78ff776d8772b
+lib/com.ibm.ws.resource_1.0.70.jar=048b3aed7f394dec73393296b1033531
+dev/spi/ibm/com.ibm.websphere.appserver.spi.containerServices_4.0.70.jar=6f6a7e15783f415c002a50f5c6c7d474

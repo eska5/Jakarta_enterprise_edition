@@ -1,0 +1,772 @@
+********************************************************************************
+product = Open Liberty 22.0.0.11 (wlp-1.0.70.cl221120221010-1540)
+wlp.install.dir = /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/
+java.home = /Library/Java/JavaVirtualMachines/adoptopenjdk-15.jdk/Contents/Home
+java.version = 15.0.2
+java.runtime = OpenJDK Runtime Environment (15.0.2+7)
+os = Mac OS X (10.16; x86_64) (pl_PL)
+process = 31913@MacBook-Pro-Micha.local
+Classpath = /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/bin/tools/ws-server.jar
+Java Library path = /Users/jakubsachajko/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+********************************************************************************
+[26.10.2022, 02:04:06:476 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: Serwer defaultServer został uruchomiony.
+[26.10.2022, 02:04:07:107 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: Jądro zostało uruchomione po 1,024 sek. s
+[26.10.2022, 02:04:07:119 CEST] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Uruchomiono aktualizację składnika.
+[26.10.2022, 02:04:07:359 CEST] 00000019 com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitorowanie aplikacji w katalogu dropins.
+[26.10.2022, 02:04:07:833 CEST] 0000002d com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Uruchamianie aplikacji Pokedex-1.0.
+[26.10.2022, 02:04:07:834 CEST] 0000002d bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: Aplikacja Pokedex-1.0 używa luźnej definicji aplikacji w położeniu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/dropins/Pokedex-1.0.war.xml.
+[26.10.2022, 02:04:08:175 CEST] 0000002d com.ibm.ws.session.WASSessionCore                            I SESN8501I: Menedżer sesji nie znalazł położenia trwałej pamięci masowej. Obiekty HttpSession będą zapisywane w pamięci lokalnego serwera aplikacji.
+[26.10.2022, 02:04:08:212 CEST] 0000002d org.jboss.weld.Version                                       I WELD-000900: 3.1.9 (Final)
+[26.10.2022, 02:04:08:904 CEST] 0000002d com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Ładowanie modułu WWW: Pokedex-1.0.
+[26.10.2022, 02:04:08:908 CEST] 0000002d com.ibm.ws.webcontainer                                      I SRVE0250I: Moduł WWW Pokedex-1.0 został powiązany z hostem wirtualnym default_host.
+[26.10.2022, 02:04:08:909 CEST] 0000002d com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Dostępna aplikacja WWW (default_host): http://localhost:9080/pokedex/
+[26.10.2022, 02:04:08:928 CEST] 00000030 com.ibm.ws.session.WASSessionCore                            I SESN0176I: W odniesieniu do klucza aplikacji default_host/pokedex zostanie utworzony nowy kontekst sesji.
+[26.10.2022, 02:04:08:937 CEST] 00000030 com.ibm.ws.util                                              I SESN0172I: Menedżer sesji korzysta przy generowaniu identyfikatora sesji z domyślnej implementacji klasy SecureRandom języka Java.
+[26.10.2022, 02:04:08:969 CEST] 0000002d com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Automatycznie wygenerowano plik konfiguracyjny wtyczki serwera WWW dla tego serwera w katalogu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[26.10.2022, 02:04:08:970 CEST] 00000030 com.ibm.ws.webcontainer.webapp                               E SRVE0293E: [Błąd serwletu]-[Failed to load listener: configuration.CreateServices]: java.lang.ClassNotFoundException: configuration.CreateServices
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.findClass(UnifiedClassLoader.java:165)
+	at com.ibm.ws.classloading.internal.ThreadContextClassLoader.findClass(ThreadContextClassLoader.java:143)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass0(UnifiedClassLoader.java:139)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader$Delegation.loadClass(UnifiedClassLoader.java:85)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass(UnifiedClassLoader.java:104)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at com.ibm.ws.webcontainer.osgi.webapp.WebApp.loadListener(WebApp.java:813)
+	at com.ibm.ws.webcontainer.webapp.WebApp.loadLifecycleListeners(WebApp.java:2292)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1036)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6684)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:472)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:467)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1188)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:111)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:985)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+[26.10.2022, 02:04:09:186 CEST] 00000030 SystemOut                                                    O Pokemon(super=classes.Pokemon@1fdf862f, name=Charizard, specialAbility=SMASH, power=2137.0, rarity=epic, type=Type(super=classes.Type@fcc823b5, typeName=Ogien, multiplier=48.0, combatList=weak, pokemons=[]))
+[26.10.2022, 02:04:09:192 CEST] 00000030 SystemOut                                                    O Pokemon(super=classes.Pokemon@5bee3bb5, name=pikachu, specialAbility=electrocute, power=650.0, rarity=legendary, type=Type(super=classes.Type@fcc823b5, typeName=Ogien, multiplier=48.0, combatList=weak, pokemons=[]))
+[26.10.2022, 02:04:09:194 CEST] 00000030 SystemOut                                                    O Pokemon(super=classes.Pokemon@ed5b4d67, name=squirtle, specialAbility=water_punch, power=220.0, rarity=common, type=Type(super=classes.Type@5756cc26, typeName=Ziemia, multiplier=23.0, combatList=neutral, pokemons=[]))
+[26.10.2022, 02:04:09:195 CEST] 00000030 SystemOut                                                    O Pokemon(super=classes.Pokemon@8855d637, name=turtwig, specialAbility=ground_hog, power=120.0, rarity=uncommon, type=Type(super=classes.Type@3e51f930, typeName=Woda, multiplier=34.5, combatList=strong, pokemons=[]))
+[26.10.2022, 02:04:09:220 CEST] 00000030 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Aplikacja Pokedex-1.0 została uruchomiona w ciągu 1,386 sek.
+[26.10.2022, 02:04:09:248 CEST] 00000025 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: Kanał TCP defaultHttpEndpoint został uruchomiony i obecnie nasłuchuje żądań na hoście localhost  (IPv4: 127.0.0.1) (port 9080).
+[26.10.2022, 02:04:09:254 CEST] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: Serwer został zainstalowany z następującymi składnikami: [cdi-2.0, jsonb-1.0, jsonp-1.1, servlet-4.0].
+[26.10.2022, 02:04:09:255 CEST] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Aktualizacja składnika została zakończona po 2,148 sek.
+[26.10.2022, 02:04:09:255 CEST] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: Serwer defaultServer jest gotowy do działania w trybie Mądrzejszy Świat. Serwer defaultServer został uruchomiony w ciągu 3,173 sekund.
+[26.10.2022, 02:04:13:433 CEST] 00000026 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Usunięta aplikacja WWW (default_host): http://localhost:9080/pokedex/
+[26.10.2022, 02:04:13:459 CEST] 00000026 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: Aplikacja Pokedex-1.0 została zatrzymana pomyślnie.
+[26.10.2022, 02:04:13:463 CEST] 00000026 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Uruchamianie aplikacji Pokedex-1.0.
+[26.10.2022, 02:04:13:464 CEST] 00000026 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: Aplikacja Pokedex-1.0 używa luźnej definicji aplikacji w położeniu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/dropins/Pokedex-1.0.war.xml.
+[26.10.2022, 02:04:13:776 CEST] 00000025 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Automatycznie wygenerowano plik konfiguracyjny wtyczki serwera WWW dla tego serwera w katalogu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[26.10.2022, 02:04:13:852 CEST] 00000026 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Ładowanie modułu WWW: Pokedex-1.0.
+[26.10.2022, 02:04:13:853 CEST] 00000026 com.ibm.ws.webcontainer                                      I SRVE0250I: Moduł WWW Pokedex-1.0 został powiązany z hostem wirtualnym default_host.
+[26.10.2022, 02:04:13:853 CEST] 00000026 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Dostępna aplikacja WWW (default_host): http://localhost:9080/pokedex/
+[26.10.2022, 02:04:13:854 CEST] 0000002d com.ibm.ws.session.WASSessionCore                            I SESN0176I: W odniesieniu do klucza aplikacji default_host/pokedex zostanie utworzony nowy kontekst sesji.
+[26.10.2022, 02:04:13:854 CEST] 0000002d com.ibm.ws.util                                              I SESN0172I: Menedżer sesji korzysta przy generowaniu identyfikatora sesji z domyślnej implementacji klasy SecureRandom języka Java.
+[26.10.2022, 02:04:13:859 CEST] 0000002d com.ibm.ws.webcontainer.webapp                               E SRVE0293E: [Błąd serwletu]-[Failed to load listener: configuration.CreateServices]: java.lang.ClassNotFoundException: configuration.CreateServices
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.findClass(UnifiedClassLoader.java:165)
+	at com.ibm.ws.classloading.internal.ThreadContextClassLoader.findClass(ThreadContextClassLoader.java:143)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass0(UnifiedClassLoader.java:139)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader$Delegation.loadClass(UnifiedClassLoader.java:85)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass(UnifiedClassLoader.java:104)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at com.ibm.ws.webcontainer.osgi.webapp.WebApp.loadListener(WebApp.java:813)
+	at com.ibm.ws.webcontainer.webapp.WebApp.loadLifecycleListeners(WebApp.java:2292)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1036)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6684)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:472)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:467)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1188)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:111)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:985)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+[26.10.2022, 02:04:13:879 CEST] 00000026 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Automatycznie wygenerowano plik konfiguracyjny wtyczki serwera WWW dla tego serwera w katalogu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[26.10.2022, 02:04:13:903 CEST] 0000002d SystemOut                                                    O Pokemon(super=classes.Pokemon@6c19dc2f, name=Charizard, specialAbility=SMASH, power=2137.0, rarity=epic, type=Type(super=classes.Type@6ac2df7b, typeName=Ogien, multiplier=48.0, combatList=weak, pokemons=[]))
+[26.10.2022, 02:04:13:909 CEST] 0000002d SystemOut                                                    O Pokemon(super=classes.Pokemon@d0a54f3a, name=pikachu, specialAbility=electrocute, power=650.0, rarity=legendary, type=Type(super=classes.Type@6ac2df7b, typeName=Ogien, multiplier=48.0, combatList=weak, pokemons=[]))
+[26.10.2022, 02:04:13:912 CEST] 0000002d SystemOut                                                    O Pokemon(super=classes.Pokemon@71dea95a, name=squirtle, specialAbility=water_punch, power=220.0, rarity=common, type=Type(super=classes.Type@3d14b2d8, typeName=Ziemia, multiplier=23.0, combatList=neutral, pokemons=[]))
+[26.10.2022, 02:04:13:914 CEST] 0000002d SystemOut                                                    O Pokemon(super=classes.Pokemon@ce99fd55, name=turtwig, specialAbility=ground_hog, power=120.0, rarity=uncommon, type=Type(super=classes.Type@76f9cca1, typeName=Woda, multiplier=34.5, combatList=strong, pokemons=[]))
+[26.10.2022, 02:04:13:928 CEST] 0000002d com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: Aplikacja Pokedex-1.0 została zaktualizowana w ciągu 0,464 sek.
+[26.10.2022, 02:04:19:653 CEST] 0000002d com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [Pokedex-1.0] [/pokedex] [servlet.TypeServlet]: inicjowanie powiodło się.
+[26.10.2022, 02:04:21:391 CEST] 00000026 SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@14d85175
+[26.10.2022, 02:04:21:473 CEST] 0000002e SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@6faaba39
+[26.10.2022, 02:04:21:493 CEST] 00000026 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:04:21:514 CEST] 0000002c SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@62f02db5
+[26.10.2022, 02:04:21:528 CEST] 0000002e com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:04:21:559 CEST] 0000002c com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:04:21:617 CEST] 0000002d SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@69ab7ca8
+[26.10.2022, 02:04:21:618 CEST] 0000002d com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:04:21:620 CEST] 0000002d com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Wyjątek zgłoszony przez klasę aplikacji com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError:612
+java.lang.IllegalStateException: Response already committed.
+	at com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError(WebAppDispatcherContext.java:612)
+	at com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError(WebAppDispatcherContext.java:657)
+	at com.ibm.ws.webcontainer.srt.SRTServletResponse.sendError(SRTServletResponse.java:1340)
+	at com.ibm.ws.webcontainer.srt.SRTServletResponse.sendError(SRTServletResponse.java:1316)
+	at servlet.TypeServlet.getType(TypeServlet.java:117)
+	at servlet.TypeServlet.doGet(TypeServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:686)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1258)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:746)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:443)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1227)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5058)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:316)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1007)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+[26.10.2022, 02:04:21:935 CEST] 0000002d com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: Zostało utworzone zdarzenie FFDC: java.lang.IllegalStateException: Response already committed. com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105 w ffdc_22.10.26_02.04.21.0.log
+[26.10.2022, 02:04:21:938 CEST] 0000002d com.ibm.ws.webcontainer.webapp                               E SRVE0315E: Wystąpił wyjątek: java.lang.Throwable: java.lang.IllegalStateException: Response already committed.
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5116)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:316)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1007)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.IllegalStateException: Response already committed.
+	at com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError(WebAppDispatcherContext.java:612)
+	at com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError(WebAppDispatcherContext.java:657)
+	at com.ibm.ws.webcontainer.srt.SRTServletResponse.sendError(SRTServletResponse.java:1340)
+	at com.ibm.ws.webcontainer.srt.SRTServletResponse.sendError(SRTServletResponse.java:1316)
+	at servlet.TypeServlet.getType(TypeServlet.java:117)
+	at servlet.TypeServlet.doGet(TypeServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:686)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1258)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:746)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:443)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1227)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5058)
+	... 18 more
+
+[26.10.2022, 02:04:21:944 CEST] 0000002d com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:04:21:946 CEST] 0000002d com.ibm.ws.webcontainer.srt                                  W SRVE8094W: Ostrzeżenie: nie można ustawić nagłówka. Odpowiedź została już zatwierdzona.  Dane śledzenia stosu dla błędnej próby ustawienia nagłówka: 
+        at com.ibm.ws.webcontainer.srt.SRTServletResponse.addHeader(SRTServletResponse.java:2205)
+        at [internal classes].(Unknown Source)
+
+[26.10.2022, 02:04:22:154 CEST] 0000002d com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: Zostało utworzone zdarzenie FFDC: com.ibm.wsspi.http.channel.exception.WriteBeyondContentLengthException com.ibm.ws.webcontainer.webapp.WebApp.handleError 912 w ffdc_22.10.26_02.04.21.1.log
+[26.10.2022, 02:04:22:156 CEST] 0000002d com.ibm.ws.webcontainer.webapp                               E Wyjątek na stronie błędu: 
+                                                                                                               Pokedex-1.0
+                                                                                                               /pokedex
+                                                                                                               Wyjątek na stronie błędu
+                                                                                                               com.ibm.ws.webcontainer.webapp.WebAppErrorReport: com.ibm.wsspi.http.channel.exception.WriteBeyondContentLengthException
+	at com.ibm.ws.webcontainer.webapp.WebApp.sendError(WebApp.java:4408)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleException(WebApp.java:5147)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5127)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:316)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1007)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: com.ibm.wsspi.http.channel.exception.WriteBeyondContentLengthException
+	at com.ibm.ws.http.channel.internal.outbound.HttpOutputStreamImpl.writeToBuffers(HttpOutputStreamImpl.java:311)
+	at com.ibm.ws.http.channel.internal.outbound.HttpOutputStreamImpl.write(HttpOutputStreamImpl.java:685)
+	at com.ibm.ws.webcontainer.osgi.response.WCOutputStream.println(WCOutputStream.java:201)
+	at com.ibm.ws.webcontainer31.osgi.response.WCOutputStream31.println(WCOutputStream31.java:539)
+	at com.ibm.ws.webcontainer.webapp.WebApp.sendError(WebApp.java:4345)
+	... 20 more
+
+[26.10.2022, 02:04:22:417 CEST] 0000002d com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: Zostało utworzone zdarzenie FFDC: java.lang.IllegalStateException: SRVE0199E: Już pobrano klasę OutputStream com.ibm.ws.webcontainer.webapp.WebApp.reportRecursiveError 985 w ffdc_22.10.26_02.04.22.0.log
+[26.10.2022, 02:04:34:198 CEST] 00000031 SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@7a5403d4
+[26.10.2022, 02:04:41:241 CEST] 0000002c SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@62f02db5
+[26.10.2022, 02:04:46:646 CEST] 00000025 SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@791d737d
+[26.10.2022, 02:04:46:668 CEST] 00000025 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:04:50:265 CEST] 0000002b SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@c9ec533
+[26.10.2022, 02:04:51:614 CEST] 0000002e SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@6faaba39
+[26.10.2022, 02:04:56:558 CEST] 0000002e SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@6faaba39
+[26.10.2022, 02:04:56:590 CEST] 00000031 SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@7a5403d4
+[26.10.2022, 02:04:56:616 CEST] 0000002d SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@69ab7ca8
+[26.10.2022, 02:04:56:633 CEST] 00000031 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:04:56:639 CEST] 0000002e com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:04:56:649 CEST] 0000002d com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:04:56:858 CEST] 00000030 SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@38c51d1b
+[26.10.2022, 02:04:56:861 CEST] 00000030 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:04:56:861 CEST] 00000030 com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Wyjątek zgłoszony przez klasę aplikacji com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError:612
+java.lang.IllegalStateException: Response already committed.
+	at com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError(WebAppDispatcherContext.java:612)
+	at com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError(WebAppDispatcherContext.java:657)
+	at com.ibm.ws.webcontainer.srt.SRTServletResponse.sendError(SRTServletResponse.java:1340)
+	at com.ibm.ws.webcontainer.srt.SRTServletResponse.sendError(SRTServletResponse.java:1316)
+	at servlet.TypeServlet.getType(TypeServlet.java:117)
+	at servlet.TypeServlet.doGet(TypeServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:686)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1258)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:746)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:443)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1227)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5058)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:316)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1007)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+[26.10.2022, 02:04:56:864 CEST] 00000030 com.ibm.ws.webcontainer.webapp                               E SRVE0315E: Wystąpił wyjątek: java.lang.Throwable: java.lang.IllegalStateException: Response already committed.
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5116)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:316)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1007)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.IllegalStateException: Response already committed.
+	at com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError(WebAppDispatcherContext.java:612)
+	at com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError(WebAppDispatcherContext.java:657)
+	at com.ibm.ws.webcontainer.srt.SRTServletResponse.sendError(SRTServletResponse.java:1340)
+	at com.ibm.ws.webcontainer.srt.SRTServletResponse.sendError(SRTServletResponse.java:1316)
+	at servlet.TypeServlet.getType(TypeServlet.java:117)
+	at servlet.TypeServlet.doGet(TypeServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:686)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1258)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:746)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:443)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1227)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5058)
+	... 18 more
+
+[26.10.2022, 02:04:56:865 CEST] 00000030 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:04:56:866 CEST] 00000030 com.ibm.ws.webcontainer.webapp                               E Wyjątek na stronie błędu: 
+                                                                                                               Pokedex-1.0
+                                                                                                               /pokedex
+                                                                                                               Wyjątek na stronie błędu
+                                                                                                               com.ibm.ws.webcontainer.webapp.WebAppErrorReport: com.ibm.wsspi.http.channel.exception.WriteBeyondContentLengthException
+	at com.ibm.ws.webcontainer.webapp.WebApp.sendError(WebApp.java:4408)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleException(WebApp.java:5147)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5127)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:316)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1007)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: com.ibm.wsspi.http.channel.exception.WriteBeyondContentLengthException
+	at com.ibm.ws.http.channel.internal.outbound.HttpOutputStreamImpl.writeToBuffers(HttpOutputStreamImpl.java:311)
+	at com.ibm.ws.http.channel.internal.outbound.HttpOutputStreamImpl.write(HttpOutputStreamImpl.java:685)
+	at com.ibm.ws.webcontainer.osgi.response.WCOutputStream.println(WCOutputStream.java:201)
+	at com.ibm.ws.webcontainer31.osgi.response.WCOutputStream31.println(WCOutputStream31.java:539)
+	at com.ibm.ws.webcontainer.webapp.WebApp.sendError(WebApp.java:4345)
+	... 20 more
+
+[26.10.2022, 02:05:09:433 CEST] 00000030 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [Pokedex-1.0] [/pokedex] [servlet.PokemonServlet]: inicjowanie powiodło się.
+[26.10.2022, 02:05:09:439 CEST] 00000030 SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@38c51d1b
+[26.10.2022, 02:05:09:448 CEST] 00000030 SystemOut                                                    O Pokemon(super=classes.Pokemon@df4d5176, name=kolejka<179976>, specialAbility=water_punch, power=2.0, rarity=common, type=Type(super=classes.Type@6ac2df7b, typeName=Ogien, multiplier=48.0, combatList=weak, pokemons=[]))
+[26.10.2022, 02:05:15:700 CEST] 00000030 SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@38c51d1b
+[26.10.2022, 02:05:26:599 CEST] 00000025 SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@791d737d
+[26.10.2022, 02:05:26:708 CEST] 0000002e SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@6faaba39
+[26.10.2022, 02:05:26:736 CEST] 00000025 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:05:26:762 CEST] 00000030 SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@38c51d1b
+[26.10.2022, 02:05:26:809 CEST] 0000002e com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:05:26:813 CEST] 00000030 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:05:27:018 CEST] 00000031 SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@7a5403d4
+[26.10.2022, 02:05:27:022 CEST] 00000031 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:05:27:022 CEST] 00000031 com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Wyjątek zgłoszony przez klasę aplikacji com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError:612
+java.lang.IllegalStateException: Response already committed.
+	at com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError(WebAppDispatcherContext.java:612)
+	at com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError(WebAppDispatcherContext.java:657)
+	at com.ibm.ws.webcontainer.srt.SRTServletResponse.sendError(SRTServletResponse.java:1340)
+	at com.ibm.ws.webcontainer.srt.SRTServletResponse.sendError(SRTServletResponse.java:1316)
+	at servlet.TypeServlet.getType(TypeServlet.java:117)
+	at servlet.TypeServlet.doGet(TypeServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:686)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1258)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:746)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:443)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1227)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1011)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:75)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:85)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:938)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+[26.10.2022, 02:05:27:024 CEST] 00000031 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:05:27:024 CEST] 00000031 com.ibm.ws.webcontainer.webapp                               E Wyjątek na stronie błędu: 
+                                                                                                               Pokedex-1.0
+                                                                                                               /pokedex
+                                                                                                               Wyjątek na stronie błędu
+                                                                                                               com.ibm.ws.webcontainer.webapp.WebAppErrorReport: com.ibm.wsspi.http.channel.exception.WriteBeyondContentLengthException
+	at com.ibm.ws.webcontainer.webapp.WebApp.sendError(WebApp.java:4408)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleException(WebApp.java:5147)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:90)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:85)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:938)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: com.ibm.wsspi.http.channel.exception.WriteBeyondContentLengthException
+	at com.ibm.ws.http.channel.internal.outbound.HttpOutputStreamImpl.writeToBuffers(HttpOutputStreamImpl.java:311)
+	at com.ibm.ws.http.channel.internal.outbound.HttpOutputStreamImpl.write(HttpOutputStreamImpl.java:685)
+	at com.ibm.ws.webcontainer.osgi.response.WCOutputStream.println(WCOutputStream.java:201)
+	at com.ibm.ws.webcontainer31.osgi.response.WCOutputStream31.println(WCOutputStream31.java:539)
+	at com.ibm.ws.webcontainer.webapp.WebApp.sendError(WebApp.java:4345)
+	... 20 more
+
+[26.10.2022, 02:05:28:249 CEST] 00000030 SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@38c51d1b
+[26.10.2022, 02:05:28:291 CEST] 00000030 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:05:32:278 CEST] 0000002b SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@c9ec533
+[26.10.2022, 02:05:32:302 CEST] 0000002b com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:05:50:010 CEST] 0000002b SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@c9ec533
+[26.10.2022, 02:05:50:025 CEST] 00000025 SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@791d737d
+[26.10.2022, 02:05:50:052 CEST] 00000025 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:05:50:060 CEST] 00000026 SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@14d85175
+[26.10.2022, 02:05:50:075 CEST] 00000026 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:05:50:082 CEST] 0000002b com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:05:50:119 CEST] 00000030 SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@38c51d1b
+[26.10.2022, 02:05:50:122 CEST] 00000030 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:05:50:122 CEST] 00000030 com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Wyjątek zgłoszony przez klasę aplikacji com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError:612
+java.lang.IllegalStateException: Response already committed.
+	at com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError(WebAppDispatcherContext.java:612)
+	at com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError(WebAppDispatcherContext.java:657)
+	at com.ibm.ws.webcontainer.srt.SRTServletResponse.sendError(SRTServletResponse.java:1340)
+	at com.ibm.ws.webcontainer.srt.SRTServletResponse.sendError(SRTServletResponse.java:1316)
+	at servlet.TypeServlet.getType(TypeServlet.java:117)
+	at servlet.TypeServlet.doGet(TypeServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:686)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1258)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:746)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:443)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1227)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1011)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:75)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:85)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:938)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+[26.10.2022, 02:05:50:124 CEST] 00000030 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:05:50:125 CEST] 00000030 com.ibm.ws.webcontainer.webapp                               E Wyjątek na stronie błędu: 
+                                                                                                               Pokedex-1.0
+                                                                                                               /pokedex
+                                                                                                               Wyjątek na stronie błędu
+                                                                                                               com.ibm.ws.webcontainer.webapp.WebAppErrorReport: com.ibm.wsspi.http.channel.exception.WriteBeyondContentLengthException
+	at com.ibm.ws.webcontainer.webapp.WebApp.sendError(WebApp.java:4408)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleException(WebApp.java:5147)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:90)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:85)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:938)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: com.ibm.wsspi.http.channel.exception.WriteBeyondContentLengthException
+	at com.ibm.ws.http.channel.internal.outbound.HttpOutputStreamImpl.writeToBuffers(HttpOutputStreamImpl.java:311)
+	at com.ibm.ws.http.channel.internal.outbound.HttpOutputStreamImpl.write(HttpOutputStreamImpl.java:685)
+	at com.ibm.ws.webcontainer.osgi.response.WCOutputStream.println(WCOutputStream.java:201)
+	at com.ibm.ws.webcontainer31.osgi.response.WCOutputStream31.println(WCOutputStream31.java:539)
+	at com.ibm.ws.webcontainer.webapp.WebApp.sendError(WebApp.java:4345)
+	... 20 more
+
+[26.10.2022, 02:06:31:852 CEST] 00000031 SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@7a5403d4
+[26.10.2022, 02:06:31:873 CEST] 0000002c SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@62f02db5
+[26.10.2022, 02:06:31:878 CEST] 00000031 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:06:31:900 CEST] 0000002c com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:06:31:901 CEST] 0000002b SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@c9ec533
+[26.10.2022, 02:06:31:934 CEST] 0000002b com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:06:31:987 CEST] 00000031 SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@7a5403d4
+[26.10.2022, 02:06:31:988 CEST] 00000031 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:06:31:989 CEST] 00000031 com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Wyjątek zgłoszony przez klasę aplikacji com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError:612
+java.lang.IllegalStateException: Response already committed.
+	at com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError(WebAppDispatcherContext.java:612)
+	at com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError(WebAppDispatcherContext.java:657)
+	at com.ibm.ws.webcontainer.srt.SRTServletResponse.sendError(SRTServletResponse.java:1340)
+	at com.ibm.ws.webcontainer.srt.SRTServletResponse.sendError(SRTServletResponse.java:1316)
+	at servlet.TypeServlet.getType(TypeServlet.java:117)
+	at servlet.TypeServlet.doGet(TypeServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:686)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1258)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:746)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:443)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1227)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1011)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:75)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:85)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:938)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+[26.10.2022, 02:06:31:990 CEST] 00000031 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:06:31:991 CEST] 00000031 com.ibm.ws.webcontainer.webapp                               E Wyjątek na stronie błędu: 
+                                                                                                               Pokedex-1.0
+                                                                                                               /pokedex
+                                                                                                               Wyjątek na stronie błędu
+                                                                                                               com.ibm.ws.webcontainer.webapp.WebAppErrorReport: com.ibm.wsspi.http.channel.exception.WriteBeyondContentLengthException
+	at com.ibm.ws.webcontainer.webapp.WebApp.sendError(WebApp.java:4408)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleException(WebApp.java:5147)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:90)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:85)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:938)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: com.ibm.wsspi.http.channel.exception.WriteBeyondContentLengthException
+	at com.ibm.ws.http.channel.internal.outbound.HttpOutputStreamImpl.writeToBuffers(HttpOutputStreamImpl.java:311)
+	at com.ibm.ws.http.channel.internal.outbound.HttpOutputStreamImpl.write(HttpOutputStreamImpl.java:685)
+	at com.ibm.ws.webcontainer.osgi.response.WCOutputStream.println(WCOutputStream.java:201)
+	at com.ibm.ws.webcontainer31.osgi.response.WCOutputStream31.println(WCOutputStream31.java:539)
+	at com.ibm.ws.webcontainer.webapp.WebApp.sendError(WebApp.java:4345)
+	... 20 more
+
+[26.10.2022, 02:06:34:756 CEST] 00000025 SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@791d737d
+[26.10.2022, 02:06:45:116 CEST] 0000002b SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@c9ec533
+[26.10.2022, 02:06:45:119 CEST] 0000002c SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@62f02db5
+[26.10.2022, 02:06:45:123 CEST] 0000002e SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@6faaba39
+[26.10.2022, 02:06:45:155 CEST] 00000030 SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@38c51d1b
+[26.10.2022, 02:06:45:156 CEST] 00000030 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:06:45:157 CEST] 00000030 com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Wyjątek zgłoszony przez klasę aplikacji com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError:612
+java.lang.IllegalStateException: Response already committed.
+	at com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError(WebAppDispatcherContext.java:612)
+	at com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError(WebAppDispatcherContext.java:657)
+	at com.ibm.ws.webcontainer.srt.SRTServletResponse.sendError(SRTServletResponse.java:1340)
+	at com.ibm.ws.webcontainer.srt.SRTServletResponse.sendError(SRTServletResponse.java:1316)
+	at servlet.TypeServlet.getType(TypeServlet.java:117)
+	at servlet.TypeServlet.doGet(TypeServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:686)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1258)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:746)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:443)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1227)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1011)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:75)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:85)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:938)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+[26.10.2022, 02:06:45:159 CEST] 00000030 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:06:45:159 CEST] 00000030 com.ibm.ws.webcontainer.webapp                               E Wyjątek na stronie błędu: 
+                                                                                                               Pokedex-1.0
+                                                                                                               /pokedex
+                                                                                                               Wyjątek na stronie błędu
+                                                                                                               com.ibm.ws.webcontainer.webapp.WebAppErrorReport: com.ibm.wsspi.http.channel.exception.WriteBeyondContentLengthException
+	at com.ibm.ws.webcontainer.webapp.WebApp.sendError(WebApp.java:4408)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleException(WebApp.java:5147)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:90)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:85)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:938)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: com.ibm.wsspi.http.channel.exception.WriteBeyondContentLengthException
+	at com.ibm.ws.http.channel.internal.outbound.HttpOutputStreamImpl.writeToBuffers(HttpOutputStreamImpl.java:311)
+	at com.ibm.ws.http.channel.internal.outbound.HttpOutputStreamImpl.write(HttpOutputStreamImpl.java:685)
+	at com.ibm.ws.webcontainer.osgi.response.WCOutputStream.println(WCOutputStream.java:201)
+	at com.ibm.ws.webcontainer31.osgi.response.WCOutputStream31.println(WCOutputStream31.java:539)
+	at com.ibm.ws.webcontainer.webapp.WebApp.sendError(WebApp.java:4345)
+	... 20 more
+
+[26.10.2022, 02:06:48:508 CEST] 00000026 SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@14d85175
+[26.10.2022, 02:06:48:523 CEST] 0000002e SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@6faaba39
+[26.10.2022, 02:06:48:529 CEST] 0000002c SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@62f02db5
+[26.10.2022, 02:06:48:551 CEST] 00000026 SystemOut                                                    O com.ibm.ws.webcontainer40.srt.SRTServletRequest40@14d85175
+[26.10.2022, 02:06:48:552 CEST] 00000026 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:06:48:553 CEST] 00000026 com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Wyjątek zgłoszony przez klasę aplikacji com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError:612
+java.lang.IllegalStateException: Response already committed.
+	at com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError(WebAppDispatcherContext.java:612)
+	at com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError(WebAppDispatcherContext.java:657)
+	at com.ibm.ws.webcontainer.srt.SRTServletResponse.sendError(SRTServletResponse.java:1340)
+	at com.ibm.ws.webcontainer.srt.SRTServletResponse.sendError(SRTServletResponse.java:1316)
+	at servlet.TypeServlet.getType(TypeServlet.java:117)
+	at servlet.TypeServlet.doGet(TypeServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:686)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1258)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:746)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:443)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1227)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5058)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:316)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1007)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+[26.10.2022, 02:06:48:554 CEST] 00000026 com.ibm.ws.webcontainer.webapp                               E SRVE0315E: Wystąpił wyjątek: java.lang.Throwable: java.lang.IllegalStateException: Response already committed.
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5116)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:316)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1007)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.IllegalStateException: Response already committed.
+	at com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError(WebAppDispatcherContext.java:612)
+	at com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext.sendError(WebAppDispatcherContext.java:657)
+	at com.ibm.ws.webcontainer.srt.SRTServletResponse.sendError(SRTServletResponse.java:1340)
+	at com.ibm.ws.webcontainer.srt.SRTServletResponse.sendError(SRTServletResponse.java:1316)
+	at servlet.TypeServlet.getType(TypeServlet.java:117)
+	at servlet.TypeServlet.doGet(TypeServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:686)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1258)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:746)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:443)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1227)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5058)
+	... 18 more
+
+[26.10.2022, 02:06:48:555 CEST] 00000026 com.ibm.ws.webcontainer.srt                                  W SRVE8115W: OSTRZEŻENIE: Nie można ustawić statusu. Odpowiedź została już zatwierdzona.
+[26.10.2022, 02:06:48:556 CEST] 00000026 com.ibm.ws.webcontainer.webapp                               E Wyjątek na stronie błędu: 
+                                                                                                               Pokedex-1.0
+                                                                                                               /pokedex
+                                                                                                               Wyjątek na stronie błędu
+                                                                                                               com.ibm.ws.webcontainer.webapp.WebAppErrorReport: com.ibm.wsspi.http.channel.exception.WriteBeyondContentLengthException
+	at com.ibm.ws.webcontainer.webapp.WebApp.sendError(WebApp.java:4408)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleException(WebApp.java:5147)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5127)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:316)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1007)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: com.ibm.wsspi.http.channel.exception.WriteBeyondContentLengthException
+	at com.ibm.ws.http.channel.internal.outbound.HttpOutputStreamImpl.writeToBuffers(HttpOutputStreamImpl.java:311)
+	at com.ibm.ws.http.channel.internal.outbound.HttpOutputStreamImpl.write(HttpOutputStreamImpl.java:685)
+	at com.ibm.ws.webcontainer.osgi.response.WCOutputStream.println(WCOutputStream.java:201)
+	at com.ibm.ws.webcontainer31.osgi.response.WCOutputStream31.println(WCOutputStream31.java:539)
+	at com.ibm.ws.webcontainer.webapp.WebApp.sendError(WebApp.java:4345)
+	... 20 more
+
+[26.10.2022, 02:06:53:731 CEST] 00000014 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0085I: Serwer defaultServer jest zatrzymywany, ponieważ kończone jest działanie maszyny JVM.
+[26.10.2022, 02:06:53:747 CEST] 00000034 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Oczekiwanie co najwyżej przez 30 s na wyciszenie serwera.
+[26.10.2022, 02:06:53:763 CEST] 0000002d com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: Dla kanału TCP defaultHttpEndpoint zatrzymano nasłuchiwanie żądań na hoście localhost  (IPv4: 127.0.0.1) (port 9080).
+[26.10.2022, 02:06:53:764 CEST] 0000002d com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Usunięta aplikacja WWW (default_host): http://localhost:9080/pokedex/
+[26.10.2022, 02:06:53:983 CEST] 00000015 com.ibm.ws.kernel.launch.internal.ServerCommandListener      A CWWKE0055I: Zażądano zamknięcia serwera w dniu środa, 26 października 2022 o godzinie 02:06. Serwer defaultServer jest wyłączany.
+[26.10.2022, 02:06:54:770 CEST] 00000034 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Zakończono wyciszanie serwera.
+[26.10.2022, 02:06:54:798 CEST] 00000026 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: Aplikacja Pokedex-1.0 została zatrzymana pomyślnie.
+[26.10.2022, 02:06:55:108 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: Serwer defaultServer został zatrzymany po 2 min., 49,029 sek..

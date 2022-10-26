@@ -24,9 +24,9 @@ public class GetPokemonResponse {
     private Rarity rarity;
     private Type type;
 
-    @ToString.Exclude
-    @EqualsAndHashCode.Exclude
-    private byte[] photo;
+//    @ToString.Exclude
+//    @EqualsAndHashCode.Exclude
+//    private byte[] photo;
 
     public static Function<Pokemon, GetPokemonResponse> entityToDtoMapper() {
         return pokemon -> GetPokemonResponse.builder()
@@ -35,7 +35,7 @@ public class GetPokemonResponse {
                 .power(pokemon.getPower())
                 .rarity(pokemon.getRarity())
                 .type(pokemon.getType())
-                .photo(pokemon.getPhoto())
+//                .photo(pokemon.getPhoto())
                 .build();
     }
 }

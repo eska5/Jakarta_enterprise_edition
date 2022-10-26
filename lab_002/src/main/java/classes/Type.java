@@ -18,7 +18,8 @@ import java.util.Map;
 public class Type implements Serializable {
     private String typeName;
     private double multiplier;
-    private Map<String, MatchUp> combatList;
+    private MatchUp combatList;
+    private List <Pokemon> pokemons;
 
     @ToString.Exclude
     @EqualsAndHashCode.Exclude

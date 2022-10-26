@@ -1,4 +1,4 @@
-#Sun Oct 23 02:15:26 CEST 2022
-lib/features/com.ibm.websphere.appserver.javaeePlatform-8.0.mf=cf67c9698dc3e583dcc93a23978b114d
-lib/com.ibm.ws.javaee.platform.v8_1.0.69.jar=86669523d5dbf2301bf8601c4d6854ba
-lib/com.ibm.ws.javaee.version_1.0.69.jar=6eaa62401cfec570ce8acbffe2c87bd6
+#Tue Oct 25 15:35:56 CEST 2022
+lib/com.ibm.ws.javaee.version_1.0.70.jar=7fafe3835387d2087c7cad71b61a5247
+lib/features/com.ibm.websphere.appserver.javaeePlatform-8.0.mf=f0e918dfc038c0b7a32268c3fd1c6b60
+lib/com.ibm.ws.javaee.platform.v8_1.0.70.jar=ecc16c39b716a9428c9146be72d98859

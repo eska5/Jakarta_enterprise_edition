@@ -1,3 +1,3 @@
-#Sun Oct 23 02:15:26 CEST 2022
-lib/com.ibm.ws.jsonb.service_1.0.69.jar=f375c3f9e46dbf246210084b265b409a
-lib/features/com.ibm.websphere.appserver.jsonb-1.0.mf=0a2e819fdfe260a97bfe40c08fcb4be8
+#Tue Oct 25 15:35:55 CEST 2022
+lib/features/com.ibm.websphere.appserver.jsonb-1.0.mf=911a7263546c97259d9d112097242aae
+lib/com.ibm.ws.jsonb.service_1.0.70.jar=1ecc6412e93fd7265964eab7621d93f4

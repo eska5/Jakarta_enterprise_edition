@@ -1,5 +1,5 @@
-#Sun Oct 23 02:15:25 CEST 2022
-lib/com.ibm.ws.anno_1.1.69.jar=58edb06b26215948b90c10c6ad9a0999
-dev/spi/ibm/com.ibm.websphere.appserver.spi.anno_1.1.69.jar=f2d83c06a7243717a1b553538395fb77
-lib/features/com.ibm.websphere.appserver.anno-1.0.mf=bf3c6e181fdba79304002a0b1d688aec
-dev/spi/ibm/javadoc/com.ibm.websphere.appserver.spi.anno_1.1-javadoc.zip=b140ebb75a9219c1434daf4d99bc98f6
+#Tue Oct 25 15:35:55 CEST 2022
+lib/com.ibm.ws.anno_1.1.70.jar=3ee630827c9f549357ed1f1578394cab
+lib/features/com.ibm.websphere.appserver.anno-1.0.mf=f85fc6f83ffd558663db70abe533958c
+dev/spi/ibm/javadoc/com.ibm.websphere.appserver.spi.anno_1.1-javadoc.zip=c75cb1172b68f18642ca578d927e547f
+dev/spi/ibm/com.ibm.websphere.appserver.spi.anno_1.1.70.jar=49d7e06f8e644dc9dfd9bb76364b5e8d
