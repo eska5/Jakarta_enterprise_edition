@@ -1,0 +1,6 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      3 05.11.2022, 20:21:42:823 CET 05.11.2022, 20:22:17:811 CET java.lang.IllegalArgumentException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105
+                                                                            - /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_22.11.05_20.21.42.0.log
+------+------+---------------------------+---------------------------+---------------------------

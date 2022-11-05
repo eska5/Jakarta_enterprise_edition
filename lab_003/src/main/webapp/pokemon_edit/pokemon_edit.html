@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Pokedex"/>
+    <meta name="keywords" content="Pokedex"/>
+    <meta name="author" content="Jakub Sachajko"/>
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="stylesheet" href="pokemon_edit.css"/>
+    <script src="../script.js" defer="defer"></script>
+    <script src="pokemon_edit.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Pokedex</h1>
+    </header>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../index.html">main</a></li>
+            <li><a href="../about/about.html">about this project</a></li>
+            <li><a href="../type_list/type_list.html">pokemons</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-section">
+        <article class="text--justified">
+            <header><h2>Edit pokemon</h2></header>
+            <form class="character__form" id="infoForm">
+                <label for="name">name:</label>
+                <input class="ui-control ui-input" id="name" name="name" disabled/>
+                <label for="specialAbility">specialAbility:</label>
+                <input class="ui-control ui-input" id="specialAbility" name="specialAbility"/>
+                <label for="power">power:</label>
+                <input class="ui-control ui-input" id="power" name="power" type="number"/>
+                <label for="rarity">rarity(common, uncommon, rare, epic, legendary):</label>
+                <input class="ui-control" id="rarity" name="rarity"></input>
+                <input class="ui-control ui-button" type="submit" name="Update"/>
+            </form>
+        </article>
+
+        <article class="text--justified">
+            <header><h2>Edit photo</h2></header>
+            <form class="photo_form" id="photoForm">
+                <label for="photo">photo:</label>
+                <input class="ui-control ui-button" id="photo" name="photo" type="file"/>
+                <input class="ui-control ui-button" type="submit" value="Upload"/>
+            </form>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2022, Jakub Sachajko</p>
+    </footer>
+</div>
+</body>
+</html>

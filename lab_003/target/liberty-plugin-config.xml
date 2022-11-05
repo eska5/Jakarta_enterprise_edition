@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<liberty-plugin-config>
+    <activeBuildProfiles>
+        <profileId>liberty</profileId>
+    </activeBuildProfiles>
+    <installDirectory>/Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp</installDirectory>
+    <serverDirectory>/Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer</serverDirectory>
+    <userDirectory>/Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr</userDirectory>
+    <serverOutputDirectory>/Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer</serverOutputDirectory>
+    <serverName>defaultServer</serverName>
+    <configDirectory>/Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/src/main/liberty/config</configDirectory>
+    <configFile>/Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/src/main/liberty/config/server.xml</configFile>
+    <appsDirectory>dropins</appsDirectory>
+    <looseApplication>true</looseApplication>
+    <stripVersion>false</stripVersion>
+    <installAppPackages>project</installAppPackages>
+    <applicationFilename>Pokedex-1.0.war.xml</applicationFilename>
+    <assemblyArtifact>
+        <groupId>io.openliberty</groupId>
+        <artifactId>openliberty-kernel</artifactId>
+        <version>22.0.0.11</version>
+        <type>zip</type>
+    </assemblyArtifact>
+    <assemblyArchive>/Users/jakubsachajko/.m2/repository/io/openliberty/openliberty-kernel/22.0.0.11/openliberty-kernel-22.0.0.11.zip</assemblyArchive>
+    <assemblyInstallDirectory>/Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty</assemblyInstallDirectory>
+    <refresh>false</refresh>
+    <installAppsConfigDropins>/Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/configDropins/defaults/install_apps_configuration_1491924271.xml</installAppsConfigDropins>
+    <projectType>war</projectType>
+</liberty-plugin-config>
