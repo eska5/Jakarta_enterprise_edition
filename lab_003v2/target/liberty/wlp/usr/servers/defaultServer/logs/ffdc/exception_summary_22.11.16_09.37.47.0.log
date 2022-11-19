@@ -1,0 +1,8 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1 16.11.2022, 09:37:47:461 CET 16.11.2022, 09:37:47:461 CET javax.transaction.RollbackException com.ibm.ws.spi.uow.UOWManagerImpl.runUnderNewUOW 1220
+                                                                            - /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_22.11.16_09.37.47.0.log
+     1      1 16.11.2022, 09:37:47:539 CET 16.11.2022, 09:37:47:539 CET org.apache.cxf.interceptor.Fault com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105
+                                                                            - /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_22.11.16_09.37.47.1.log
+------+------+---------------------------+---------------------------+---------------------------

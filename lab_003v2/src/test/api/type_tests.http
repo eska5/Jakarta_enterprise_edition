@@ -1,0 +1,126 @@
+###
+TEST POST
+###
+
+DELETE http://localhost:9080/pokedex/api/types/Ogien
+# Accept: application/json
+
+###
+
+POST http://localhost:9080/pokedex/api/types
+Content-Type: application/json
+
+{
+    "typeName": "OgienDodany",
+    "multiplier": 2.0,
+    "combatList": "weak"
+}
+
+###
+
+GET http://localhost:9080/pokedex/api/types
+Accept: application/json
+
+###
+
+GET http://localhost:9080/pokedex/api/types/OgienDodany
+Accept: application/json
+
+
+
+
+###
+TEST DELETE
+###
+
+POST http://localhost:9080/pokedex/api/types
+Content-Type: application/json
+
+{
+    "typeName": "OgienDodany4",
+    "multiplier": 2.0,
+    "combatList": "weak"
+}
+
+###
+
+GET http://localhost:9080/pokedex/api/types
+Accept: application/json
+
+###
+
+DELETE http://localhost:9080/pokedex/api/types/OgienDodany4
+Accept: application/json
+
+###
+
+GET http://localhost:9080/pokedex/api/types/
+Accept: application/json
+
+
+
+
+###
+TEST GET
+###
+
+GET http://localhost:9080/pokedex/api/types
+Accept: application/json
+
+###
+
+GET http://localhost:9080/pokedex/api/types/Ogien
+Accept: application/json
+
+###
+
+GET http://localhost:9080/pokedex/api/types/Woda
+Accept: application/json
+
+###
+
+GET http://localhost:9080/pokedex/api/types/Ziemia
+Accept: application/json
+
+###
+
+GET http://localhost:9080/pokedex/api/types/TestowyBrak
+Accept: application/json
+
+
+
+
+###
+TEST PUT
+###
+
+POST http://localhost:9080/pokedex/api/types
+Content-Type: application/json
+
+{
+    "typeName": "OgienPUTTEST",
+    "multiplier": 2.0,
+    "combatList": "weak"
+}
+
+###
+
+GET http://localhost:9080/pokedex/api/types/OgienPUTTEST
+Accept: application/json
+
+###
+
+PUT http://localhost:9080/pokedex/api/types/OgienPUTTEST
+Content-Type: application/json
+
+{
+    "multiplier": 3.0,
+    "combatList": "strong"
+}
+
+###
+
+GET http://localhost:9080/pokedex/api/types/OgienPUTTEST
+Accept: application/json
+
+###

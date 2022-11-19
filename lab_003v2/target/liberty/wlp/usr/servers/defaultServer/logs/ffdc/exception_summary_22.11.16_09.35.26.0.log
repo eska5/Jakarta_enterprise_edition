@@ -1,0 +1,6 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      2 16.11.2022, 09:35:26:424 CET 16.11.2022, 09:35:29:904 CET javax.persistence.PersistenceException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105
+                                                                            - /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_22.11.16_09.35.26.0.log
+------+------+---------------------------+---------------------------+---------------------------

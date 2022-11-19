@@ -1,0 +1,121 @@
+###
+TEST POST
+###
+
+POST http://localhost:9080/pokedex/api/types/Ogien/pokemons
+Content-Type: application/json
+
+{
+    "name": "nowyPokemon",
+    "specialAbility": "zabawa",
+    "power": 22.45,
+    "rarity": "rare",
+    "typeName": "Ogien"
+}
+
+###
+
+GET http://localhost:9080/pokedex/api/types
+Accept: application/json
+
+###
+
+GET http://localhost:9080/pokedex/api/types/Ogien/pokemons/Charizard
+Accept: application/json
+
+###
+
+GET http://localhost:9080/pokedex/api/types/Ogien/pokemons/nowyPokemon
+Accept: application/json
+
+
+###
+TEST DELETE
+###
+
+POST http://localhost:9080/pokedex/api/types/Woda/pokemons
+Content-Type: application/json
+
+{
+    "name": "nowyPokemon2",
+    "specialAbility": "zabawa2",
+    "power": 12.22,
+    "rarity": "legendary",
+    "typeName": "Woda"
+}
+
+###
+
+GET http://localhost:9080/pokedex/api/types/Woda/pokemons/nowyPokemon2
+Accept: application/json
+
+###
+
+DELETE http://localhost:9080/pokedex/api/types/Woda/pokemons/nowyPokemon2
+Accept: application/json
+
+###
+
+GET http://localhost:9080/pokedex/api/types/Woda/pokemons/nowyPokemon2
+Accept: application/json
+
+
+
+
+###
+TEST GET
+###
+
+GET http://localhost:9080/pokedex/api/pokemons
+Accept: application/json
+
+###
+
+GET http://localhost:9080/pokedex/api/types/Ogien/pokemons/Charizard
+Accept: application/json
+
+###
+
+GET http://localhost:9080/pokedex/api/types/Ogien/pokemons/pikachu
+Accept: application/json
+
+
+
+
+###
+TEST PUT
+###
+
+POST http://localhost:9080/pokedex/api/types/Woda/pokemons
+Content-Type: application/json
+
+{
+    "name": "nowyPokemon2",
+    "specialAbility": "zabawa2",
+    "power": 12.22,
+    "rarity": "legendary",
+    "typeName": "Woda"
+}
+
+###
+
+GET http://localhost:9080/pokedex/api/types/Woda/pokemons/nowyPokemon2
+Accept: application/json
+
+###
+
+PUT http://localhost:9080/pokedex/api/types/Woda/pokemons/nowyPokemon2
+Content-Type: application/json
+
+{
+    "specialAbility": "zmianaUmiejetnosci",
+    "power": 20.99,
+    "rarity": "epic"
+}
+
+###
+
+GET http://localhost:9080/pokedex/api/types/Woda/pokemons/nowyPokemon2
+Accept: application/json
+
+###

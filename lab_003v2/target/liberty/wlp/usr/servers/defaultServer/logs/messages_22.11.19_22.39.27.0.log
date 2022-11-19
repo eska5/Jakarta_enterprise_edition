@@ -1,0 +1,840 @@
+********************************************************************************
+product = Open Liberty 22.0.0.11 (wlp-1.0.70.cl221120221010-1540)
+wlp.install.dir = /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/
+java.home = /Library/Java/JavaVirtualMachines/adoptopenjdk-15.jdk/Contents/Home
+java.version = 15.0.2
+java.runtime = OpenJDK Runtime Environment (15.0.2+7)
+os = Mac OS X (10.16; x86_64) (pl_PL)
+process = 65130@MacBook-Pro-Micha.local
+Classpath = /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/bin/tools/ws-server.jar
+Java Library path = /Users/jakubsachajko/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+********************************************************************************
+[16.11.2022, 09:35:46:726 CET] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: Serwer defaultServer został uruchomiony.
+[16.11.2022, 09:35:48:407 CET] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: Jądro zostało uruchomione po 2,316 sek. s
+[16.11.2022, 09:35:48:425 CET] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Uruchomiono aktualizację składnika.
+[16.11.2022, 09:35:48:987 CET] 0000001a com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitorowanie aplikacji w katalogu dropins.
+[16.11.2022, 09:35:50:819 CET] 0000002d com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Uruchamianie aplikacji pokedex-1.0.
+[16.11.2022, 09:35:50:820 CET] 0000002d bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: Aplikacja pokedex-1.0 używa luźnej definicji aplikacji w położeniu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/dropins/pokedex-1.0.war.xml.
+[16.11.2022, 09:35:52:756 CET] 0000002d com.ibm.ws.recoverylog.spi.RecoveryDirectorImpl              I CWRLS0010I: Trwa przetwarzanie operacji odtwarzania w przypadku lokalnego serwera produktu WebSphere (defaultServer).
+[16.11.2022, 09:35:52:817 CET] 0000002d com.ibm.ws.recoverylog.spi.RecoveryDirectorImpl              I CWRLS0012I: Wszystkie usługi trwałe zostały skierowane do przetwarzania operacji odtwarzania dla tego serwera produktu WebSphere (defaultServer).
+[16.11.2022, 09:35:52:817 CET] 00000035 com.ibm.tx.jta.impl.RecoveryManager                          I WTRN0135I: Usługa transakcji nie odzyskała żadnych transakcji.
+[16.11.2022, 09:35:54:088 CET] 0000002d eclipselink                                                  I CWWJP9990I: [eclipselink] EclipseLink, wersja: Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0
+[16.11.2022, 09:35:54:934 CET] 0000002d com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8203I: Nazwa bazy danych: H2.
+[16.11.2022, 09:35:54:939 CET] 0000002d com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8204I: Wersja bazy danych: 1.4.200 (2019-10-14).
+[16.11.2022, 09:35:54:939 CET] 0000002d com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8205I: Nazwa sterownika interfejsu JDBC: H2 JDBC Driver.
+[16.11.2022, 09:35:54:940 CET] 0000002d com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8206I: Wersja sterownika interfejsu JDBC: 1.4.200 (2019-10-14).
+[16.11.2022, 09:35:55:040 CET] 0000002d eclipselink.server                                           W CWWJP9991W: [eclipselink.server] Znajdowanie serwera komponentu MBean nie powiodło się: null or empty List returned from MBeanServerFactory.findMBeanServer(null)
+[16.11.2022, 09:35:55:343 CET] 0000002d eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "POKEMONS" nie istnieje
+Table "POKEMONS" not found; SQL statement:
+ALTER TABLE pokemons DROP CONSTRAINT FK_pokemons_type [42102-200]
+Kod błędu: 42102
+Wywołanie: ALTER TABLE pokemons DROP CONSTRAINT FK_pokemons_type
+Zapytanie: DataModifyQuery(sql="ALTER TABLE pokemons DROP CONSTRAINT FK_pokemons_type")
+[16.11.2022, 09:35:55:356 CET] 0000002d eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "TYPES" nie istnieje
+Table "TYPES" not found; SQL statement:
+DROP TABLE types [42102-200]
+Kod błędu: 42102
+Wywołanie: DROP TABLE types
+Zapytanie: DataModifyQuery(sql="DROP TABLE types")
+[16.11.2022, 09:35:55:361 CET] 0000002d eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "POKEMONS" nie istnieje
+Table "POKEMONS" not found; SQL statement:
+DROP TABLE pokemons [42102-200]
+Kod błędu: 42102
+Wywołanie: DROP TABLE pokemons
+Zapytanie: DataModifyQuery(sql="DROP TABLE pokemons")
+[16.11.2022, 09:35:55:365 CET] 0000002d eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "TYPES" nie istnieje
+Table "TYPES" not found; SQL statement:
+DROP TABLE types [42102-200]
+Kod błędu: 42102
+Wywołanie: DROP TABLE types
+Zapytanie: DataModifyQuery(sql="DROP TABLE types")
+[16.11.2022, 09:35:55:366 CET] 0000002d eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "POKEMONS" nie istnieje
+Table "POKEMONS" not found; SQL statement:
+DROP TABLE pokemons [42102-200]
+Kod błędu: 42102
+Wywołanie: DROP TABLE pokemons
+Zapytanie: DataModifyQuery(sql="DROP TABLE pokemons")
+[16.11.2022, 09:35:55:368 CET] 0000002d eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "TYPES" nie istnieje
+Table "TYPES" not found; SQL statement:
+DROP TABLE types [42102-200]
+Kod błędu: 42102
+Wywołanie: DROP TABLE types
+Zapytanie: DataModifyQuery(sql="DROP TABLE types")
+[16.11.2022, 09:35:55:373 CET] 0000002d eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "POKEMONS" nie istnieje
+Table "POKEMONS" not found; SQL statement:
+DROP TABLE pokemons [42102-200]
+Kod błędu: 42102
+Wywołanie: DROP TABLE pokemons
+Zapytanie: DataModifyQuery(sql="DROP TABLE pokemons")
+[16.11.2022, 09:35:55:375 CET] 0000002d eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "TYPES" nie istnieje
+Table "TYPES" not found; SQL statement:
+DROP TABLE types [42102-200]
+Kod błędu: 42102
+Wywołanie: DROP TABLE types
+Zapytanie: DataModifyQuery(sql="DROP TABLE types")
+[16.11.2022, 09:35:55:376 CET] 0000002d eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "POKEMONS" nie istnieje
+Table "POKEMONS" not found; SQL statement:
+DROP TABLE pokemons [42102-200]
+Kod błędu: 42102
+Wywołanie: DROP TABLE pokemons
+Zapytanie: DataModifyQuery(sql="DROP TABLE pokemons")
+[16.11.2022, 09:35:55:378 CET] 0000002d eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "TYPES" nie istnieje
+Table "TYPES" not found; SQL statement:
+DROP TABLE types [42102-200]
+Kod błędu: 42102
+Wywołanie: DROP TABLE types
+Zapytanie: DataModifyQuery(sql="DROP TABLE types")
+[16.11.2022, 09:35:55:379 CET] 0000002d eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "POKEMONS" nie istnieje
+Table "POKEMONS" not found; SQL statement:
+DROP TABLE pokemons [42102-200]
+Kod błędu: 42102
+Wywołanie: DROP TABLE pokemons
+Zapytanie: DataModifyQuery(sql="DROP TABLE pokemons")
+[16.11.2022, 09:35:55:454 CET] 0000002d com.ibm.ws.session.WASSessionCore                            I SESN8501I: Menedżer sesji nie znalazł położenia trwałej pamięci masowej. Obiekty HttpSession będą zapisywane w pamięci lokalnego serwera aplikacji.
+[16.11.2022, 09:35:55:514 CET] 0000002d org.jboss.weld.Version                                       I WELD-000900: 3.1.9 (Final)
+[16.11.2022, 09:35:58:428 CET] 0000002d org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.cdi.JsfArtifactProducerExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[16.11.2022, 09:35:58:431 CET] 0000002d org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.config.annotation.CdiAnnotationProviderExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[16.11.2022, 09:35:59:320 CET] 0000002d com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Ładowanie modułu WWW: pokedex-1.0.
+[16.11.2022, 09:35:59:329 CET] 0000002d com.ibm.ws.webcontainer                                      I SRVE0250I: Moduł WWW pokedex-1.0 został powiązany z hostem wirtualnym default_host.
+[16.11.2022, 09:35:59:332 CET] 0000002d com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Dostępna aplikacja WWW (default_host): http://localhost:9080/pokedex/
+[16.11.2022, 09:35:59:394 CET] 0000002a com.ibm.ws.session.WASSessionCore                            I SESN0176I: W odniesieniu do klucza aplikacji default_host/pokedex zostanie utworzony nowy kontekst sesji.
+[16.11.2022, 09:35:59:415 CET] 0000002a com.ibm.ws.util                                              I SESN0172I: Menedżer sesji korzysta przy generowaniu identyfikatora sesji z domyślnej implementacji klasy SecureRandom języka Java.
+[16.11.2022, 09:35:59:416 CET] 00000026 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Automatycznie wygenerowano plik konfiguracyjny wtyczki serwera WWW dla tego serwera w katalogu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[16.11.2022, 09:35:59:538 CET] 0000002a org.apache.myfaces.ee.MyFacesContainerInitializer            I Using org.apache.myfaces.ee.MyFacesContainerInitializer
+[16.11.2022, 09:35:59:742 CET] 0000002a com.ibm.ws.webcontainer.webapp                               E SRVE0293E: [Błąd serwletu]-[Failed to load listener: configuration.CreateDataSource]: java.lang.ClassNotFoundException: configuration.CreateDataSource
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.findClass(UnifiedClassLoader.java:165)
+	at com.ibm.ws.classloading.internal.ThreadContextClassLoader.findClass(ThreadContextClassLoader.java:143)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass0(UnifiedClassLoader.java:139)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader$Delegation.loadClass(UnifiedClassLoader.java:85)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass(UnifiedClassLoader.java:104)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at com.ibm.ws.webcontainer.osgi.webapp.WebApp.loadListener(WebApp.java:813)
+	at com.ibm.ws.webcontainer.webapp.WebApp.loadLifecycleListeners(WebApp.java:2292)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1036)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6684)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:472)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:467)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1188)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:111)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:985)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+[16.11.2022, 09:35:59:811 CET] 0000002a com.ibm.ws.webcontainer.webapp                               E SRVE0293E: [Błąd serwletu]-[Failed to load listener: configuration.CreateServices]: java.lang.ClassNotFoundException: configuration.CreateServices
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.findClass(UnifiedClassLoader.java:165)
+	at com.ibm.ws.classloading.internal.ThreadContextClassLoader.findClass(ThreadContextClassLoader.java:143)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass0(UnifiedClassLoader.java:139)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader$Delegation.loadClass(UnifiedClassLoader.java:85)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass(UnifiedClassLoader.java:104)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at com.ibm.ws.webcontainer.osgi.webapp.WebApp.loadListener(WebApp.java:813)
+	at com.ibm.ws.webcontainer.webapp.WebApp.loadLifecycleListeners(WebApp.java:2292)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1036)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6684)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:472)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:467)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1188)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:111)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:985)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+[16.11.2022, 09:36:00:126 CET] 0000002a com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Aplikacja pokedex-1.0 została uruchomiona w ciągu 9,307 sek.
+[16.11.2022, 09:36:00:151 CET] 00000025 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: Kanał TCP defaultHttpEndpoint został uruchomiony i obecnie nasłuchuje żądań na hoście localhost  (IPv4: 127.0.0.1) (port 9080).
+[16.11.2022, 09:36:00:160 CET] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: Serwer został zainstalowany z następującymi składnikami: [cdi-2.0, el-3.0, jaxrs-2.1, jaxrsClient-2.1, jdbc-4.2, jndi-1.0, jpa-2.2, jpaContainer-2.2, jsf-2.3, jsonb-1.0, jsonp-1.1, jsp-2.3, servlet-4.0].
+[16.11.2022, 09:36:00:161 CET] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Aktualizacja składnika została zakończona po 11,756 sek.
+[16.11.2022, 09:36:00:162 CET] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: Serwer defaultServer jest gotowy do działania w trybie Mądrzejszy Świat. Serwer defaultServer został uruchomiony w ciągu 14,073 sekund.
+[16.11.2022, 09:36:08:118 CET] 00000028 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Usunięta aplikacja WWW (default_host): http://localhost:9080/pokedex/
+[16.11.2022, 09:36:08:165 CET] 00000028 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: Aplikacja pokedex-1.0 została zatrzymana pomyślnie.
+[16.11.2022, 09:36:08:171 CET] 00000028 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Uruchamianie aplikacji pokedex-1.0.
+[16.11.2022, 09:36:08:171 CET] 00000028 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: Aplikacja pokedex-1.0 używa luźnej definicji aplikacji w położeniu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/dropins/pokedex-1.0.war.xml.
+[16.11.2022, 09:36:08:758 CET] 00000028 eclipselink                                                  I CWWJP9990I: [eclipselink] EclipseLink, wersja: Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0
+[16.11.2022, 09:36:08:944 CET] 0000002a com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Automatycznie wygenerowano plik konfiguracyjny wtyczki serwera WWW dla tego serwera w katalogu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[16.11.2022, 09:36:09:482 CET] 00000028 org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.config.annotation.CdiAnnotationProviderExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[16.11.2022, 09:36:09:483 CET] 00000028 org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.cdi.JsfArtifactProducerExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[16.11.2022, 09:36:09:667 CET] 00000028 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Ładowanie modułu WWW: pokedex-1.0.
+[16.11.2022, 09:36:09:667 CET] 00000028 com.ibm.ws.webcontainer                                      I SRVE0250I: Moduł WWW pokedex-1.0 został powiązany z hostem wirtualnym default_host.
+[16.11.2022, 09:36:09:668 CET] 00000028 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Dostępna aplikacja WWW (default_host): http://localhost:9080/pokedex/
+[16.11.2022, 09:36:09:669 CET] 00000025 com.ibm.ws.session.WASSessionCore                            I SESN0176I: W odniesieniu do klucza aplikacji default_host/pokedex zostanie utworzony nowy kontekst sesji.
+[16.11.2022, 09:36:09:670 CET] 00000025 com.ibm.ws.util                                              I SESN0172I: Menedżer sesji korzysta przy generowaniu identyfikatora sesji z domyślnej implementacji klasy SecureRandom języka Java.
+[16.11.2022, 09:36:09:691 CET] 0000002a com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Automatycznie wygenerowano plik konfiguracyjny wtyczki serwera WWW dla tego serwera w katalogu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[16.11.2022, 09:36:09:727 CET] 00000025 org.apache.myfaces.ee.MyFacesContainerInitializer            I Using org.apache.myfaces.ee.MyFacesContainerInitializer
+[16.11.2022, 09:36:09:751 CET] 00000025 com.ibm.ws.webcontainer.webapp                               E SRVE0293E: [Błąd serwletu]-[Failed to load listener: configuration.CreateDataSource]: java.lang.ClassNotFoundException: configuration.CreateDataSource
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.findClass(UnifiedClassLoader.java:165)
+	at com.ibm.ws.classloading.internal.ThreadContextClassLoader.findClass(ThreadContextClassLoader.java:143)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass0(UnifiedClassLoader.java:139)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader$Delegation.loadClass(UnifiedClassLoader.java:85)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass(UnifiedClassLoader.java:104)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at com.ibm.ws.webcontainer.osgi.webapp.WebApp.loadListener(WebApp.java:813)
+	at com.ibm.ws.webcontainer.webapp.WebApp.loadLifecycleListeners(WebApp.java:2292)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1036)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6684)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:472)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:467)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1188)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:111)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:985)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+[16.11.2022, 09:36:09:752 CET] 00000025 com.ibm.ws.webcontainer.webapp                               E SRVE0293E: [Błąd serwletu]-[Failed to load listener: configuration.CreateServices]: java.lang.ClassNotFoundException: configuration.CreateServices
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.findClass(UnifiedClassLoader.java:165)
+	at com.ibm.ws.classloading.internal.ThreadContextClassLoader.findClass(ThreadContextClassLoader.java:143)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass0(UnifiedClassLoader.java:139)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader$Delegation.loadClass(UnifiedClassLoader.java:85)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass(UnifiedClassLoader.java:104)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at com.ibm.ws.webcontainer.osgi.webapp.WebApp.loadListener(WebApp.java:813)
+	at com.ibm.ws.webcontainer.webapp.WebApp.loadLifecycleListeners(WebApp.java:2292)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1036)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6684)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:472)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:467)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1188)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:111)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:985)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+[16.11.2022, 09:36:09:880 CET] 00000025 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: Aplikacja pokedex-1.0 została zaktualizowana w ciągu 1,709 sek.
+[16.11.2022, 09:36:28:126 CET] 0000002b .apache.cxf.cxf.core.3.2:1.0.70.cl221120221010-1540(id=162)] I Setting the server's publish address to be /api/
+[16.11.2022, 09:36:28:232 CET] 0000002b com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [pokedex-1.0] [/pokedex] [Controller.Config]: inicjowanie powiodło się.
+[16.11.2022, 09:37:23:142 CET] 00000048 SystemOut                                                    O Optional[Type(typeName=Woda, multiplier=34.5, combatList=strong, pokemons=[])]
+[16.11.2022, 09:37:47:433 CET] 00000049 eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Naruszenie więzów integralności: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"
+Referential integrity constraint violation: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"; SQL statement:
+DELETE FROM types WHERE (TYPENAME = ?) [23503-200]
+Kod błędu: 23503
+Wywołanie: DELETE FROM types WHERE (TYPENAME = ?)
+	bind => [1 parameter bound]
+Zapytanie: DeleteObjectQuery(Type(typeName=Woda, multiplier=34.5, combatList=strong, pokemons=[]))
+[16.11.2022, 09:37:47:438 CET] 00000049 com.ibm.tx.jta.impl.RegisteredSyncs                          E WTRN0074E: Wychwycono wyjątek w operacji synchronizacji before_completion: javax.persistence.PersistenceException: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Naruszenie więzów integralności: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"
+Referential integrity constraint violation: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"; SQL statement:
+DELETE FROM types WHERE (TYPENAME = ?) [23503-200]
+Kod błędu: 23503
+Wywołanie: DELETE FROM types WHERE (TYPENAME = ?)
+	bind => [1 parameter bound]
+Zapytanie: DeleteObjectQuery(Type(typeName=Woda, multiplier=34.5, combatList=strong, pokemons=[]))
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl$1.handleException(EntityManagerSetupImpl.java:784)
+	at org.eclipse.persistence.transaction.AbstractSynchronizationListener.handleException(AbstractSynchronizationListener.java:277)
+	at org.eclipse.persistence.transaction.AbstractSynchronizationListener.beforeCompletion(AbstractSynchronizationListener.java:172)
+	at org.eclipse.persistence.transaction.JTASynchronizationListener.beforeCompletion(JTASynchronizationListener.java:70)
+	at com.ibm.tx.jta.impl.RegisteredSyncs.coreDistributeBefore(RegisteredSyncs.java:238)
+	at com.ibm.tx.jta.impl.RegisteredSyncs.distributeBefore(RegisteredSyncs.java:146)
+	at com.ibm.tx.jta.impl.TransactionImpl.prePrepare(TransactionImpl.java:1404)
+	at com.ibm.tx.jta.impl.TransactionImpl.stage1CommitProcessing(TransactionImpl.java:814)
+	at com.ibm.tx.jta.impl.TransactionImpl.processCommit(TransactionImpl.java:770)
+	at com.ibm.tx.jta.impl.TransactionImpl.commit(TransactionImpl.java:713)
+	at com.ibm.tx.jta.impl.TranManagerImpl.commit(TranManagerImpl.java:153)
+	at com.ibm.tx.jta.impl.TranManagerSet.commit(TranManagerSet.java:110)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.uowCommit(EmbeddableUOWManagerImpl.java:834)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.uowEnd(EmbeddableUOWManagerImpl.java:812)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderNewUOW(EmbeddableUOWManagerImpl.java:1043)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderUOW(EmbeddableUOWManagerImpl.java:1013)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor.runUnderUOWManagingEnablement(TransactionalInterceptor.java:151)
+	at com.ibm.tx.jta.cdi.interceptors.Required.required(Required.java:40)
+	at jdk.internal.reflect.GeneratedMethodAccessor566.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:73)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeAroundInvoke(InterceptorMethodHandler.java:84)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:72)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
+	at service.TypeService$Proxy$_$$_WeldSubclass.delete(Unknown Source)
+	at service.TypeService$Proxy$_$$_WeldClientProxy.delete(Unknown Source)
+	at Controller.TypeController.deleteType(TypeController.java:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor616.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at com.ibm.ws.jaxrs20.cdi.component.JaxRsFactoryImplicitBeanCDICustomizer.serviceInvoke(JaxRsFactoryImplicitBeanCDICustomizer.java:350)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.performInvocation(LibertyJaxRsServerFactoryBean.java:641)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.performInvocation(LibertyJaxRsInvoker.java:160)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:101)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:273)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:213)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:444)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:112)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:96)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:123)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:277)
+	at com.ibm.ws.jaxrs20.endpoint.AbstractJaxRsWebEndpoint.invoke(AbstractJaxRsWebEndpoint.java:137)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.handleRequest(IBMRestServlet.java:146)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.doDelete(IBMRestServlet.java:131)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:712)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.service(IBMRestServlet.java:96)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1258)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:746)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:443)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1227)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1011)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:75)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:85)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:938)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:328)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:167)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:75)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Naruszenie więzów integralności: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"
+Referential integrity constraint violation: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"; SQL statement:
+DELETE FROM types WHERE (TYPENAME = ?) [23503-200]
+Kod błędu: 23503
+Wywołanie: DELETE FROM types WHERE (TYPENAME = ?)
+	bind => [1 parameter bound]
+Zapytanie: DeleteObjectQuery(Type(typeName=Woda, multiplier=34.5, combatList=strong, pokemons=[]))
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:333)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:917)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:979)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:640)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:567)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2105)
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:313)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:275)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:261)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.deleteObject(DatasourceCallQueryMechanism.java:243)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.deleteObject(StatementQueryMechanism.java:107)
+	at org.eclipse.persistence.queries.DeleteObjectQuery.executeDatabaseQuery(DeleteObjectQuery.java:220)
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913)
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:812)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:110)
+	at org.eclipse.persistence.queries.DeleteObjectQuery.executeInUnitOfWorkObjectLevelModifyQuery(DeleteObjectQuery.java:121)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:87)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3004)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1898)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1880)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1830)
+	at org.eclipse.persistence.internal.sessions.CommitManager.deleteAllObjects(CommitManager.java:344)
+	at org.eclipse.persistence.internal.sessions.CommitManager.deleteAllObjects(CommitManager.java:293)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1506)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1593)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.issueSQLbeforeCompletion(UnitOfWorkImpl.java:3281)
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.issueSQLbeforeCompletion(RepeatableWriteUnitOfWork.java:357)
+	at org.eclipse.persistence.transaction.AbstractSynchronizationListener.beforeCompletion(AbstractSynchronizationListener.java:160)
+	... 72 more
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Naruszenie więzów integralności: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"
+Referential integrity constraint violation: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"; SQL statement:
+DELETE FROM types WHERE (TYPENAME = ?) [23503-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:373)
+	at org.h2.constraint.ConstraintReferential.checkRowRefTable(ConstraintReferential.java:390)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:265)
+	at org.h2.table.Table.fireConstraints(Table.java:1057)
+	at org.h2.table.Table.fireAfterRow(Table.java:1075)
+	at org.h2.command.dml.Delete.update(Delete.java:153)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at com.ibm.ws.rsadapter.jdbc.WSJdbcPreparedStatement.executeUpdate(WSJdbcPreparedStatement.java:520)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:907)
+	... 98 more
+
+[16.11.2022, 09:37:47:480 CET] 00000049 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: Zostało utworzone zdarzenie FFDC: javax.transaction.RollbackException com.ibm.ws.spi.uow.UOWManagerImpl.runUnderNewUOW 1220 w ffdc_22.11.16_09.37.47.0.log
+[16.11.2022, 09:37:47:503 CET] 00000049 .apache.cxf.cxf.core.3.2:1.0.70.cl221120221010-1540(id=162)] W Exception in handleFault on interceptor org.apache.cxf.jaxrs.interceptor.JAXRSDefaultFaultOutInterceptor@3e194383
+org.apache.cxf.interceptor.Fault
+	at org.apache.cxf.service.invoker.AbstractInvoker.createFault(AbstractInvoker.java:167)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:133)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:273)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:213)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:444)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:112)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:96)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:123)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:277)
+	at com.ibm.ws.jaxrs20.endpoint.AbstractJaxRsWebEndpoint.invoke(AbstractJaxRsWebEndpoint.java:137)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.handleRequest(IBMRestServlet.java:146)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.doDelete(IBMRestServlet.java:131)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:712)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.service(IBMRestServlet.java:96)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1258)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:746)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:443)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1227)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1011)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:75)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:85)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:938)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:328)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:167)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:75)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: javax.transaction.RollbackException
+	at com.ibm.tx.jta.impl.TransactionImpl.stage3CommitProcessing(TransactionImpl.java:1001)
+	at com.ibm.tx.jta.impl.TransactionImpl.processCommit(TransactionImpl.java:799)
+	at com.ibm.tx.jta.impl.TransactionImpl.commit(TransactionImpl.java:713)
+	at com.ibm.tx.jta.impl.TranManagerImpl.commit(TranManagerImpl.java:153)
+	at com.ibm.tx.jta.impl.TranManagerSet.commit(TranManagerSet.java:110)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.uowCommit(EmbeddableUOWManagerImpl.java:834)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.uowEnd(EmbeddableUOWManagerImpl.java:812)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderNewUOW(EmbeddableUOWManagerImpl.java:1043)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderUOW(EmbeddableUOWManagerImpl.java:1013)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor.runUnderUOWManagingEnablement(TransactionalInterceptor.java:151)
+	at com.ibm.tx.jta.cdi.interceptors.Required.required(Required.java:40)
+	at jdk.internal.reflect.GeneratedMethodAccessor566.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:73)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeAroundInvoke(InterceptorMethodHandler.java:84)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:72)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
+	at service.TypeService$Proxy$_$$_WeldSubclass.delete(Unknown Source)
+	at service.TypeService$Proxy$_$$_WeldClientProxy.delete(Unknown Source)
+	at Controller.TypeController.deleteType(TypeController.java:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor616.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at com.ibm.ws.jaxrs20.cdi.component.JaxRsFactoryImplicitBeanCDICustomizer.serviceInvoke(JaxRsFactoryImplicitBeanCDICustomizer.java:350)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.performInvocation(LibertyJaxRsServerFactoryBean.java:641)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.performInvocation(LibertyJaxRsInvoker.java:160)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:101)
+	... 40 more
+Caused by: javax.persistence.PersistenceException: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Naruszenie więzów integralności: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"
+Referential integrity constraint violation: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"; SQL statement:
+DELETE FROM types WHERE (TYPENAME = ?) [23503-200]
+Kod błędu: 23503
+Wywołanie: DELETE FROM types WHERE (TYPENAME = ?)
+	bind => [1 parameter bound]
+Zapytanie: DeleteObjectQuery(Type(typeName=Woda, multiplier=34.5, combatList=strong, pokemons=[]))
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl$1.handleException(EntityManagerSetupImpl.java:784)
+	at org.eclipse.persistence.transaction.AbstractSynchronizationListener.handleException(AbstractSynchronizationListener.java:277)
+	at org.eclipse.persistence.transaction.AbstractSynchronizationListener.beforeCompletion(AbstractSynchronizationListener.java:172)
+	at org.eclipse.persistence.transaction.JTASynchronizationListener.beforeCompletion(JTASynchronizationListener.java:70)
+	at com.ibm.tx.jta.impl.RegisteredSyncs.coreDistributeBefore(RegisteredSyncs.java:238)
+	at com.ibm.tx.jta.impl.RegisteredSyncs.distributeBefore(RegisteredSyncs.java:146)
+	at com.ibm.tx.jta.impl.TransactionImpl.prePrepare(TransactionImpl.java:1404)
+	at com.ibm.tx.jta.impl.TransactionImpl.stage1CommitProcessing(TransactionImpl.java:814)
+	at com.ibm.tx.jta.impl.TransactionImpl.processCommit(TransactionImpl.java:770)
+	... 66 more
+Caused by: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Naruszenie więzów integralności: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"
+Referential integrity constraint violation: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"; SQL statement:
+DELETE FROM types WHERE (TYPENAME = ?) [23503-200]
+Kod błędu: 23503
+Wywołanie: DELETE FROM types WHERE (TYPENAME = ?)
+	bind => [1 parameter bound]
+Zapytanie: DeleteObjectQuery(Type(typeName=Woda, multiplier=34.5, combatList=strong, pokemons=[]))
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:333)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:917)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:979)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:640)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:567)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2105)
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:313)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:275)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:261)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.deleteObject(DatasourceCallQueryMechanism.java:243)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.deleteObject(StatementQueryMechanism.java:107)
+	at org.eclipse.persistence.queries.DeleteObjectQuery.executeDatabaseQuery(DeleteObjectQuery.java:220)
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913)
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:812)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:110)
+	at org.eclipse.persistence.queries.DeleteObjectQuery.executeInUnitOfWorkObjectLevelModifyQuery(DeleteObjectQuery.java:121)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:87)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3004)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1898)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1880)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1830)
+	at org.eclipse.persistence.internal.sessions.CommitManager.deleteAllObjects(CommitManager.java:344)
+	at org.eclipse.persistence.internal.sessions.CommitManager.deleteAllObjects(CommitManager.java:293)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1506)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1593)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.issueSQLbeforeCompletion(UnitOfWorkImpl.java:3281)
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.issueSQLbeforeCompletion(RepeatableWriteUnitOfWork.java:357)
+	at org.eclipse.persistence.transaction.AbstractSynchronizationListener.beforeCompletion(AbstractSynchronizationListener.java:160)
+	... 72 more
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Naruszenie więzów integralności: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"
+Referential integrity constraint violation: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"; SQL statement:
+DELETE FROM types WHERE (TYPENAME = ?) [23503-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:373)
+	at org.h2.constraint.ConstraintReferential.checkRowRefTable(ConstraintReferential.java:390)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:265)
+	at org.h2.table.Table.fireConstraints(Table.java:1057)
+	at org.h2.table.Table.fireAfterRow(Table.java:1075)
+	at org.h2.command.dml.Delete.update(Delete.java:153)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at com.ibm.ws.rsadapter.jdbc.WSJdbcPreparedStatement.executeUpdate(WSJdbcPreparedStatement.java:520)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:907)
+	... 98 more
+
+[16.11.2022, 09:37:47:514 CET] 00000049 .apache.cxf.cxf.core.3.2:1.0.70.cl221120221010-1540(id=162)] E An unexpected error occurred during error handling. No further error processing will occur.
+org.apache.cxf.interceptor.Fault
+	at org.apache.cxf.service.invoker.AbstractInvoker.createFault(AbstractInvoker.java:167)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:133)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:273)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:213)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:444)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:112)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:96)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:123)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:277)
+	at com.ibm.ws.jaxrs20.endpoint.AbstractJaxRsWebEndpoint.invoke(AbstractJaxRsWebEndpoint.java:137)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.handleRequest(IBMRestServlet.java:146)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.doDelete(IBMRestServlet.java:131)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:712)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.service(IBMRestServlet.java:96)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1258)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:746)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:443)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1227)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1011)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:75)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:85)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:938)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:328)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:167)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:75)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: javax.transaction.RollbackException
+	at com.ibm.tx.jta.impl.TransactionImpl.stage3CommitProcessing(TransactionImpl.java:1001)
+	at com.ibm.tx.jta.impl.TransactionImpl.processCommit(TransactionImpl.java:799)
+	at com.ibm.tx.jta.impl.TransactionImpl.commit(TransactionImpl.java:713)
+	at com.ibm.tx.jta.impl.TranManagerImpl.commit(TranManagerImpl.java:153)
+	at com.ibm.tx.jta.impl.TranManagerSet.commit(TranManagerSet.java:110)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.uowCommit(EmbeddableUOWManagerImpl.java:834)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.uowEnd(EmbeddableUOWManagerImpl.java:812)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderNewUOW(EmbeddableUOWManagerImpl.java:1043)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderUOW(EmbeddableUOWManagerImpl.java:1013)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor.runUnderUOWManagingEnablement(TransactionalInterceptor.java:151)
+	at com.ibm.tx.jta.cdi.interceptors.Required.required(Required.java:40)
+	at jdk.internal.reflect.GeneratedMethodAccessor566.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:73)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeAroundInvoke(InterceptorMethodHandler.java:84)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:72)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
+	at service.TypeService$Proxy$_$$_WeldSubclass.delete(Unknown Source)
+	at service.TypeService$Proxy$_$$_WeldClientProxy.delete(Unknown Source)
+	at Controller.TypeController.deleteType(TypeController.java:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor616.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at com.ibm.ws.jaxrs20.cdi.component.JaxRsFactoryImplicitBeanCDICustomizer.serviceInvoke(JaxRsFactoryImplicitBeanCDICustomizer.java:350)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.performInvocation(LibertyJaxRsServerFactoryBean.java:641)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.performInvocation(LibertyJaxRsInvoker.java:160)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:101)
+	... 40 more
+Caused by: javax.persistence.PersistenceException: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Naruszenie więzów integralności: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"
+Referential integrity constraint violation: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"; SQL statement:
+DELETE FROM types WHERE (TYPENAME = ?) [23503-200]
+Kod błędu: 23503
+Wywołanie: DELETE FROM types WHERE (TYPENAME = ?)
+	bind => [1 parameter bound]
+Zapytanie: DeleteObjectQuery(Type(typeName=Woda, multiplier=34.5, combatList=strong, pokemons=[]))
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl$1.handleException(EntityManagerSetupImpl.java:784)
+	at org.eclipse.persistence.transaction.AbstractSynchronizationListener.handleException(AbstractSynchronizationListener.java:277)
+	at org.eclipse.persistence.transaction.AbstractSynchronizationListener.beforeCompletion(AbstractSynchronizationListener.java:172)
+	at org.eclipse.persistence.transaction.JTASynchronizationListener.beforeCompletion(JTASynchronizationListener.java:70)
+	at com.ibm.tx.jta.impl.RegisteredSyncs.coreDistributeBefore(RegisteredSyncs.java:238)
+	at com.ibm.tx.jta.impl.RegisteredSyncs.distributeBefore(RegisteredSyncs.java:146)
+	at com.ibm.tx.jta.impl.TransactionImpl.prePrepare(TransactionImpl.java:1404)
+	at com.ibm.tx.jta.impl.TransactionImpl.stage1CommitProcessing(TransactionImpl.java:814)
+	at com.ibm.tx.jta.impl.TransactionImpl.processCommit(TransactionImpl.java:770)
+	... 66 more
+Caused by: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Naruszenie więzów integralności: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"
+Referential integrity constraint violation: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"; SQL statement:
+DELETE FROM types WHERE (TYPENAME = ?) [23503-200]
+Kod błędu: 23503
+Wywołanie: DELETE FROM types WHERE (TYPENAME = ?)
+	bind => [1 parameter bound]
+Zapytanie: DeleteObjectQuery(Type(typeName=Woda, multiplier=34.5, combatList=strong, pokemons=[]))
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:333)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:917)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:979)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:640)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:567)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2105)
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:313)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:275)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:261)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.deleteObject(DatasourceCallQueryMechanism.java:243)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.deleteObject(StatementQueryMechanism.java:107)
+	at org.eclipse.persistence.queries.DeleteObjectQuery.executeDatabaseQuery(DeleteObjectQuery.java:220)
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913)
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:812)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:110)
+	at org.eclipse.persistence.queries.DeleteObjectQuery.executeInUnitOfWorkObjectLevelModifyQuery(DeleteObjectQuery.java:121)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:87)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3004)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1898)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1880)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1830)
+	at org.eclipse.persistence.internal.sessions.CommitManager.deleteAllObjects(CommitManager.java:344)
+	at org.eclipse.persistence.internal.sessions.CommitManager.deleteAllObjects(CommitManager.java:293)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1506)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1593)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.issueSQLbeforeCompletion(UnitOfWorkImpl.java:3281)
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.issueSQLbeforeCompletion(RepeatableWriteUnitOfWork.java:357)
+	at org.eclipse.persistence.transaction.AbstractSynchronizationListener.beforeCompletion(AbstractSynchronizationListener.java:160)
+	... 72 more
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Naruszenie więzów integralności: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"
+Referential integrity constraint violation: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"; SQL statement:
+DELETE FROM types WHERE (TYPENAME = ?) [23503-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:373)
+	at org.h2.constraint.ConstraintReferential.checkRowRefTable(ConstraintReferential.java:390)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:265)
+	at org.h2.table.Table.fireConstraints(Table.java:1057)
+	at org.h2.table.Table.fireAfterRow(Table.java:1075)
+	at org.h2.command.dml.Delete.update(Delete.java:153)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at com.ibm.ws.rsadapter.jdbc.WSJdbcPreparedStatement.executeUpdate(WSJdbcPreparedStatement.java:520)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:907)
+	... 98 more
+
+[16.11.2022, 09:37:47:528 CET] 00000049 com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Wyjątek zgłoszony przez klasę aplikacji org.apache.cxf.service.invoker.AbstractInvoker.createFault:167
+org.apache.cxf.interceptor.Fault
+	at org.apache.cxf.service.invoker.AbstractInvoker.createFault(AbstractInvoker.java:167)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:133)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:273)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:213)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:444)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:112)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:96)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:123)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:277)
+	at com.ibm.ws.jaxrs20.endpoint.AbstractJaxRsWebEndpoint.invoke(AbstractJaxRsWebEndpoint.java:137)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.handleRequest(IBMRestServlet.java:146)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.doDelete(IBMRestServlet.java:131)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:712)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.service(IBMRestServlet.java:96)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1258)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:746)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:443)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1227)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1011)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:75)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:85)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:938)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1246)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:468)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:427)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:567)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:501)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:361)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:328)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:167)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:75)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: javax.transaction.RollbackException
+	at com.ibm.tx.jta.impl.TransactionImpl.stage3CommitProcessing(TransactionImpl.java:1001)
+	at com.ibm.tx.jta.impl.TransactionImpl.processCommit(TransactionImpl.java:799)
+	at com.ibm.tx.jta.impl.TransactionImpl.commit(TransactionImpl.java:713)
+	at com.ibm.tx.jta.impl.TranManagerImpl.commit(TranManagerImpl.java:153)
+	at com.ibm.tx.jta.impl.TranManagerSet.commit(TranManagerSet.java:110)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.uowCommit(EmbeddableUOWManagerImpl.java:834)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.uowEnd(EmbeddableUOWManagerImpl.java:812)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderNewUOW(EmbeddableUOWManagerImpl.java:1043)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderUOW(EmbeddableUOWManagerImpl.java:1013)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor.runUnderUOWManagingEnablement(TransactionalInterceptor.java:151)
+	at com.ibm.tx.jta.cdi.interceptors.Required.required(Required.java:40)
+	at jdk.internal.reflect.GeneratedMethodAccessor566.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:73)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeAroundInvoke(InterceptorMethodHandler.java:84)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:72)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
+	at service.TypeService$Proxy$_$$_WeldSubclass.delete(Unknown Source)
+	at service.TypeService$Proxy$_$$_WeldClientProxy.delete(Unknown Source)
+	at Controller.TypeController.deleteType(TypeController.java:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor616.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at com.ibm.ws.jaxrs20.cdi.component.JaxRsFactoryImplicitBeanCDICustomizer.serviceInvoke(JaxRsFactoryImplicitBeanCDICustomizer.java:350)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.performInvocation(LibertyJaxRsServerFactoryBean.java:641)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.performInvocation(LibertyJaxRsInvoker.java:160)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:101)
+	... 40 more
+Caused by: javax.persistence.PersistenceException: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Naruszenie więzów integralności: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"
+Referential integrity constraint violation: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"; SQL statement:
+DELETE FROM types WHERE (TYPENAME = ?) [23503-200]
+Kod błędu: 23503
+Wywołanie: DELETE FROM types WHERE (TYPENAME = ?)
+	bind => [1 parameter bound]
+Zapytanie: DeleteObjectQuery(Type(typeName=Woda, multiplier=34.5, combatList=strong, pokemons=[]))
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl$1.handleException(EntityManagerSetupImpl.java:784)
+	at org.eclipse.persistence.transaction.AbstractSynchronizationListener.handleException(AbstractSynchronizationListener.java:277)
+	at org.eclipse.persistence.transaction.AbstractSynchronizationListener.beforeCompletion(AbstractSynchronizationListener.java:172)
+	at org.eclipse.persistence.transaction.JTASynchronizationListener.beforeCompletion(JTASynchronizationListener.java:70)
+	at com.ibm.tx.jta.impl.RegisteredSyncs.coreDistributeBefore(RegisteredSyncs.java:238)
+	at com.ibm.tx.jta.impl.RegisteredSyncs.distributeBefore(RegisteredSyncs.java:146)
+	at com.ibm.tx.jta.impl.TransactionImpl.prePrepare(TransactionImpl.java:1404)
+	at com.ibm.tx.jta.impl.TransactionImpl.stage1CommitProcessing(TransactionImpl.java:814)
+	at com.ibm.tx.jta.impl.TransactionImpl.processCommit(TransactionImpl.java:770)
+	... 66 more
+Caused by: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Naruszenie więzów integralności: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"
+Referential integrity constraint violation: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"; SQL statement:
+DELETE FROM types WHERE (TYPENAME = ?) [23503-200]
+Kod błędu: 23503
+Wywołanie: DELETE FROM types WHERE (TYPENAME = ?)
+	bind => [1 parameter bound]
+Zapytanie: DeleteObjectQuery(Type(typeName=Woda, multiplier=34.5, combatList=strong, pokemons=[]))
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:333)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:917)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:979)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:640)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:567)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2105)
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:313)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:275)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:261)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.deleteObject(DatasourceCallQueryMechanism.java:243)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.deleteObject(StatementQueryMechanism.java:107)
+	at org.eclipse.persistence.queries.DeleteObjectQuery.executeDatabaseQuery(DeleteObjectQuery.java:220)
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913)
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:812)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:110)
+	at org.eclipse.persistence.queries.DeleteObjectQuery.executeInUnitOfWorkObjectLevelModifyQuery(DeleteObjectQuery.java:121)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:87)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3004)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1898)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1880)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1830)
+	at org.eclipse.persistence.internal.sessions.CommitManager.deleteAllObjects(CommitManager.java:344)
+	at org.eclipse.persistence.internal.sessions.CommitManager.deleteAllObjects(CommitManager.java:293)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1506)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1593)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.issueSQLbeforeCompletion(UnitOfWorkImpl.java:3281)
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.issueSQLbeforeCompletion(RepeatableWriteUnitOfWork.java:357)
+	at org.eclipse.persistence.transaction.AbstractSynchronizationListener.beforeCompletion(AbstractSynchronizationListener.java:160)
+	... 72 more
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Naruszenie więzów integralności: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"
+Referential integrity constraint violation: "FK_POKEMONS_TYPE: PUBLIC.POKEMONS FOREIGN KEY(TYPE) REFERENCES PUBLIC.TYPES(TYPENAME) ('Woda')"; SQL statement:
+DELETE FROM types WHERE (TYPENAME = ?) [23503-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:373)
+	at org.h2.constraint.ConstraintReferential.checkRowRefTable(ConstraintReferential.java:390)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:265)
+	at org.h2.table.Table.fireConstraints(Table.java:1057)
+	at org.h2.table.Table.fireAfterRow(Table.java:1075)
+	at org.h2.command.dml.Delete.update(Delete.java:153)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at com.ibm.ws.rsadapter.jdbc.WSJdbcPreparedStatement.executeUpdate(WSJdbcPreparedStatement.java:520)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:907)
+	... 98 more
+
+[16.11.2022, 09:37:47:868 CET] 00000049 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: Zostało utworzone zdarzenie FFDC: org.apache.cxf.interceptor.Fault com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105 w ffdc_22.11.16_09.37.47.1.log
+[16.11.2022, 09:38:03:548 CET] 00000014 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0085I: Serwer defaultServer jest zatrzymywany, ponieważ kończone jest działanie maszyny JVM.
+[16.11.2022, 09:38:03:552 CET] 00000051 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Oczekiwanie co najwyżej przez 30 s na wyciszenie serwera.
+[16.11.2022, 09:38:03:561 CET] 00000025 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: Dla kanału TCP defaultHttpEndpoint zatrzymano nasłuchiwanie żądań na hoście localhost  (IPv4: 127.0.0.1) (port 9080).
+[16.11.2022, 09:38:03:562 CET] 00000025 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Usunięta aplikacja WWW (default_host): http://localhost:9080/pokedex/
+[16.11.2022, 09:38:03:565 CET] 00000051 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Zakończono wyciszanie serwera.
+[16.11.2022, 09:38:03:616 CET] 0000004e com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: Aplikacja pokedex-1.0 została zatrzymana pomyślnie.
+[16.11.2022, 09:38:03:718 CET] 00000051 com.ibm.tx.jta.impl.FailureScopeController                   A WTRN0105I: Usługa transakcji została pomyślnie zamknięta bez pozostawienia transakcji wymagających odtwarzania.
+[16.11.2022, 09:38:04:028 CET] 00000015 com.ibm.ws.kernel.launch.internal.ServerCommandListener      A CWWKE0055I: Zażądano zamknięcia serwera w dniu środa, 16 listopada 2022 o godzinie 09:38. Serwer defaultServer jest wyłączany.
+[16.11.2022, 09:38:04:431 CET] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: Serwer defaultServer został zatrzymany po 2 min., 18,341 sek..

@@ -1,0 +1,285 @@
+********************************************************************************
+product = Open Liberty 22.0.0.11 (wlp-1.0.70.cl221120221010-1540)
+wlp.install.dir = /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/
+java.home = /Library/Java/JavaVirtualMachines/adoptopenjdk-15.jdk/Contents/Home
+java.version = 15.0.2
+java.runtime = OpenJDK Runtime Environment (15.0.2+7)
+os = Mac OS X (10.16; x86_64) (pl_PL)
+process = 67719@MacBook-Pro-Micha.local
+Classpath = /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/bin/tools/ws-server.jar
+Java Library path = /Users/jakubsachajko/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+********************************************************************************
+[19.11.2022, 22:39:26:963 CET] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: Serwer defaultServer został uruchomiony.
+[19.11.2022, 22:39:28:408 CET] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: Jądro zostało uruchomione po 2,048 sek. s
+[19.11.2022, 22:39:28:428 CET] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Uruchomiono aktualizację składnika.
+[19.11.2022, 22:39:28:801 CET] 0000001a com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitorowanie aplikacji w katalogu dropins.
+[19.11.2022, 22:39:30:447 CET] 00000030 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Uruchamianie aplikacji pokedex-1.0.
+[19.11.2022, 22:39:30:451 CET] 00000030 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: Aplikacja pokedex-1.0 używa luźnej definicji aplikacji w położeniu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/dropins/pokedex-1.0.war.xml.
+[19.11.2022, 22:39:33:303 CET] 00000030 com.ibm.ws.recoverylog.spi.RecoveryDirectorImpl              I CWRLS0010I: Trwa przetwarzanie operacji odtwarzania w przypadku lokalnego serwera produktu WebSphere (defaultServer).
+[19.11.2022, 22:39:33:373 CET] 00000035 com.ibm.tx.jta.impl.RecoveryManager                          I WTRN0135I: Usługa transakcji nie odzyskała żadnych transakcji.
+[19.11.2022, 22:39:33:382 CET] 00000030 com.ibm.ws.recoverylog.spi.RecoveryDirectorImpl              I CWRLS0012I: Wszystkie usługi trwałe zostały skierowane do przetwarzania operacji odtwarzania dla tego serwera produktu WebSphere (defaultServer).
+[19.11.2022, 22:39:34:457 CET] 00000030 eclipselink                                                  I CWWJP9990I: [eclipselink] EclipseLink, wersja: Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0
+[19.11.2022, 22:39:35:303 CET] 00000030 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8203I: Nazwa bazy danych: H2.
+[19.11.2022, 22:39:35:307 CET] 00000030 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8204I: Wersja bazy danych: 1.4.200 (2019-10-14).
+[19.11.2022, 22:39:35:308 CET] 00000030 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8205I: Nazwa sterownika interfejsu JDBC: H2 JDBC Driver.
+[19.11.2022, 22:39:35:308 CET] 00000030 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8206I: Wersja sterownika interfejsu JDBC: 1.4.200 (2019-10-14).
+[19.11.2022, 22:39:35:624 CET] 00000030 eclipselink.server                                           W CWWJP9991W: [eclipselink.server] Znajdowanie serwera komponentu MBean nie powiodło się: null or empty List returned from MBeanServerFactory.findMBeanServer(null)
+[19.11.2022, 22:39:35:810 CET] 00000030 eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "POKEMONS" nie istnieje
+Table "POKEMONS" not found; SQL statement:
+ALTER TABLE pokemons DROP CONSTRAINT FK_pokemons_type [42102-200]
+Kod błędu: 42102
+Wywołanie: ALTER TABLE pokemons DROP CONSTRAINT FK_pokemons_type
+Zapytanie: DataModifyQuery(sql="ALTER TABLE pokemons DROP CONSTRAINT FK_pokemons_type")
+[19.11.2022, 22:39:35:820 CET] 00000030 eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "TYPES" nie istnieje
+Table "TYPES" not found; SQL statement:
+DROP TABLE types [42102-200]
+Kod błędu: 42102
+Wywołanie: DROP TABLE types
+Zapytanie: DataModifyQuery(sql="DROP TABLE types")
+[19.11.2022, 22:39:35:823 CET] 00000030 eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "POKEMONS" nie istnieje
+Table "POKEMONS" not found; SQL statement:
+DROP TABLE pokemons [42102-200]
+Kod błędu: 42102
+Wywołanie: DROP TABLE pokemons
+Zapytanie: DataModifyQuery(sql="DROP TABLE pokemons")
+[19.11.2022, 22:39:35:825 CET] 00000030 eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "TYPES" nie istnieje
+Table "TYPES" not found; SQL statement:
+DROP TABLE types [42102-200]
+Kod błędu: 42102
+Wywołanie: DROP TABLE types
+Zapytanie: DataModifyQuery(sql="DROP TABLE types")
+[19.11.2022, 22:39:35:829 CET] 00000030 eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "POKEMONS" nie istnieje
+Table "POKEMONS" not found; SQL statement:
+DROP TABLE pokemons [42102-200]
+Kod błędu: 42102
+Wywołanie: DROP TABLE pokemons
+Zapytanie: DataModifyQuery(sql="DROP TABLE pokemons")
+[19.11.2022, 22:39:35:834 CET] 00000030 eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "TYPES" nie istnieje
+Table "TYPES" not found; SQL statement:
+DROP TABLE types [42102-200]
+Kod błędu: 42102
+Wywołanie: DROP TABLE types
+Zapytanie: DataModifyQuery(sql="DROP TABLE types")
+[19.11.2022, 22:39:35:838 CET] 00000030 eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "POKEMONS" nie istnieje
+Table "POKEMONS" not found; SQL statement:
+DROP TABLE pokemons [42102-200]
+Kod błędu: 42102
+Wywołanie: DROP TABLE pokemons
+Zapytanie: DataModifyQuery(sql="DROP TABLE pokemons")
+[19.11.2022, 22:39:35:856 CET] 00000030 eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "TYPES" nie istnieje
+Table "TYPES" not found; SQL statement:
+DROP TABLE types [42102-200]
+Kod błędu: 42102
+Wywołanie: DROP TABLE types
+Zapytanie: DataModifyQuery(sql="DROP TABLE types")
+[19.11.2022, 22:39:35:863 CET] 00000030 eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "POKEMONS" nie istnieje
+Table "POKEMONS" not found; SQL statement:
+DROP TABLE pokemons [42102-200]
+Kod błędu: 42102
+Wywołanie: DROP TABLE pokemons
+Zapytanie: DataModifyQuery(sql="DROP TABLE pokemons")
+[19.11.2022, 22:39:35:869 CET] 00000030 eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "TYPES" nie istnieje
+Table "TYPES" not found; SQL statement:
+DROP TABLE types [42102-200]
+Kod błędu: 42102
+Wywołanie: DROP TABLE types
+Zapytanie: DataModifyQuery(sql="DROP TABLE types")
+[19.11.2022, 22:39:35:889 CET] 00000030 eclipselink                                                  W CWWJP9991W: Wyjątek [EclipseLink-4002] (Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0): org.eclipse.persistence.exceptions.DatabaseException
+Wyjątek wewnętrzny: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "POKEMONS" nie istnieje
+Table "POKEMONS" not found; SQL statement:
+DROP TABLE pokemons [42102-200]
+Kod błędu: 42102
+Wywołanie: DROP TABLE pokemons
+Zapytanie: DataModifyQuery(sql="DROP TABLE pokemons")
+[19.11.2022, 22:39:36:033 CET] 00000030 com.ibm.ws.session.WASSessionCore                            I SESN8501I: Menedżer sesji nie znalazł położenia trwałej pamięci masowej. Obiekty HttpSession będą zapisywane w pamięci lokalnego serwera aplikacji.
+[19.11.2022, 22:39:36:117 CET] 00000030 org.jboss.weld.Version                                       I WELD-000900: 3.1.9 (Final)
+[19.11.2022, 22:39:38:681 CET] 00000030 org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.cdi.JsfArtifactProducerExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[19.11.2022, 22:39:38:703 CET] 00000030 org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.config.annotation.CdiAnnotationProviderExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[19.11.2022, 22:39:39:895 CET] 00000030 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Ładowanie modułu WWW: pokedex-1.0.
+[19.11.2022, 22:39:39:926 CET] 00000030 com.ibm.ws.webcontainer                                      I SRVE0250I: Moduł WWW pokedex-1.0 został powiązany z hostem wirtualnym default_host.
+[19.11.2022, 22:39:39:980 CET] 00000030 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Dostępna aplikacja WWW (default_host): http://localhost:9080/pokedex/
+[19.11.2022, 22:39:40:026 CET] 00000027 com.ibm.ws.session.WASSessionCore                            I SESN0176I: W odniesieniu do klucza aplikacji default_host/pokedex zostanie utworzony nowy kontekst sesji.
+[19.11.2022, 22:39:40:042 CET] 00000027 com.ibm.ws.util                                              I SESN0172I: Menedżer sesji korzysta przy generowaniu identyfikatora sesji z domyślnej implementacji klasy SecureRandom języka Java.
+[19.11.2022, 22:39:40:052 CET] 0000002f com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Automatycznie wygenerowano plik konfiguracyjny wtyczki serwera WWW dla tego serwera w katalogu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[19.11.2022, 22:39:40:251 CET] 00000027 org.apache.myfaces.ee.MyFacesContainerInitializer            I Using org.apache.myfaces.ee.MyFacesContainerInitializer
+[19.11.2022, 22:39:40:501 CET] 00000027 com.ibm.ws.webcontainer.webapp                               E SRVE0293E: [Błąd serwletu]-[Failed to load listener: configuration.CreateDataSource]: java.lang.ClassNotFoundException: configuration.CreateDataSource
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.findClass(UnifiedClassLoader.java:165)
+	at com.ibm.ws.classloading.internal.ThreadContextClassLoader.findClass(ThreadContextClassLoader.java:143)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass0(UnifiedClassLoader.java:139)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader$Delegation.loadClass(UnifiedClassLoader.java:85)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass(UnifiedClassLoader.java:104)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at com.ibm.ws.webcontainer.osgi.webapp.WebApp.loadListener(WebApp.java:813)
+	at com.ibm.ws.webcontainer.webapp.WebApp.loadLifecycleListeners(WebApp.java:2292)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1036)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6684)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:472)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:467)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1188)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:111)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:985)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+[19.11.2022, 22:39:40:562 CET] 00000027 com.ibm.ws.webcontainer.webapp                               E SRVE0293E: [Błąd serwletu]-[Failed to load listener: configuration.CreateServices]: java.lang.ClassNotFoundException: configuration.CreateServices
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.findClass(UnifiedClassLoader.java:165)
+	at com.ibm.ws.classloading.internal.ThreadContextClassLoader.findClass(ThreadContextClassLoader.java:143)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass0(UnifiedClassLoader.java:139)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader$Delegation.loadClass(UnifiedClassLoader.java:85)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass(UnifiedClassLoader.java:104)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at com.ibm.ws.webcontainer.osgi.webapp.WebApp.loadListener(WebApp.java:813)
+	at com.ibm.ws.webcontainer.webapp.WebApp.loadLifecycleListeners(WebApp.java:2292)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1036)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6684)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:472)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:467)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1188)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:111)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:985)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+[19.11.2022, 22:39:41:193 CET] 00000027 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Aplikacja pokedex-1.0 została uruchomiona w ciągu 10,746 sek.
+[19.11.2022, 22:39:41:215 CET] 00000025 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: Kanał TCP defaultHttpEndpoint został uruchomiony i obecnie nasłuchuje żądań na hoście localhost  (IPv4: 127.0.0.1) (port 9080).
+[19.11.2022, 22:39:41:226 CET] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: Serwer został zainstalowany z następującymi składnikami: [cdi-2.0, el-3.0, jaxrs-2.1, jaxrsClient-2.1, jdbc-4.2, jndi-1.0, jpa-2.2, jpaContainer-2.2, jsf-2.3, jsonb-1.0, jsonp-1.1, jsp-2.3, servlet-4.0].
+[19.11.2022, 22:39:41:227 CET] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Aktualizacja składnika została zakończona po 12,820 sek.
+[19.11.2022, 22:39:41:228 CET] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: Serwer defaultServer jest gotowy do działania w trybie Mądrzejszy Świat. Serwer defaultServer został uruchomiony w ciągu 14,869 sekund.
+[19.11.2022, 22:39:45:272 CET] 00000031 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Usunięta aplikacja WWW (default_host): http://localhost:9080/pokedex/
+[19.11.2022, 22:39:45:303 CET] 00000031 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: Aplikacja pokedex-1.0 została zatrzymana pomyślnie.
+[19.11.2022, 22:39:45:307 CET] 00000031 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Uruchamianie aplikacji pokedex-1.0.
+[19.11.2022, 22:39:45:307 CET] 00000031 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: Aplikacja pokedex-1.0 używa luźnej definicji aplikacji w położeniu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/dropins/pokedex-1.0.war.xml.
+[19.11.2022, 22:39:45:580 CET] 00000031 eclipselink                                                  I CWWJP9990I: [eclipselink] EclipseLink, wersja: Eclipse Persistence Services - 2.7.11.v20220804-52dea2a3c0
+[19.11.2022, 22:39:45:606 CET] 00000030 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Automatycznie wygenerowano plik konfiguracyjny wtyczki serwera WWW dla tego serwera w katalogu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[19.11.2022, 22:39:45:880 CET] 00000031 org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.cdi.JsfArtifactProducerExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[19.11.2022, 22:39:45:885 CET] 00000031 org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.config.annotation.CdiAnnotationProviderExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[19.11.2022, 22:39:45:985 CET] 00000031 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Ładowanie modułu WWW: pokedex-1.0.
+[19.11.2022, 22:39:45:985 CET] 00000031 com.ibm.ws.webcontainer                                      I SRVE0250I: Moduł WWW pokedex-1.0 został powiązany z hostem wirtualnym default_host.
+[19.11.2022, 22:39:45:985 CET] 00000031 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Dostępna aplikacja WWW (default_host): http://localhost:9080/pokedex/
+[19.11.2022, 22:39:45:986 CET] 0000002e com.ibm.ws.session.WASSessionCore                            I SESN0176I: W odniesieniu do klucza aplikacji default_host/pokedex zostanie utworzony nowy kontekst sesji.
+[19.11.2022, 22:39:45:987 CET] 0000002e com.ibm.ws.util                                              I SESN0172I: Menedżer sesji korzysta przy generowaniu identyfikatora sesji z domyślnej implementacji klasy SecureRandom języka Java.
+[19.11.2022, 22:39:46:012 CET] 00000031 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Automatycznie wygenerowano plik konfiguracyjny wtyczki serwera WWW dla tego serwera w katalogu /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[19.11.2022, 22:39:46:016 CET] 0000002e org.apache.myfaces.ee.MyFacesContainerInitializer            I Using org.apache.myfaces.ee.MyFacesContainerInitializer
+[19.11.2022, 22:39:46:047 CET] 0000002e com.ibm.ws.webcontainer.webapp                               E SRVE0293E: [Błąd serwletu]-[Failed to load listener: configuration.CreateDataSource]: java.lang.ClassNotFoundException: configuration.CreateDataSource
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.findClass(UnifiedClassLoader.java:165)
+	at com.ibm.ws.classloading.internal.ThreadContextClassLoader.findClass(ThreadContextClassLoader.java:143)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass0(UnifiedClassLoader.java:139)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader$Delegation.loadClass(UnifiedClassLoader.java:85)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass(UnifiedClassLoader.java:104)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at com.ibm.ws.webcontainer.osgi.webapp.WebApp.loadListener(WebApp.java:813)
+	at com.ibm.ws.webcontainer.webapp.WebApp.loadLifecycleListeners(WebApp.java:2292)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1036)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6684)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:472)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:467)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1188)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:111)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:985)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+[19.11.2022, 22:39:46:048 CET] 0000002e com.ibm.ws.webcontainer.webapp                               E SRVE0293E: [Błąd serwletu]-[Failed to load listener: configuration.CreateServices]: java.lang.ClassNotFoundException: configuration.CreateServices
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.findClass(UnifiedClassLoader.java:165)
+	at com.ibm.ws.classloading.internal.ThreadContextClassLoader.findClass(ThreadContextClassLoader.java:143)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass0(UnifiedClassLoader.java:139)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader$Delegation.loadClass(UnifiedClassLoader.java:85)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass(UnifiedClassLoader.java:104)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at com.ibm.ws.webcontainer.osgi.webapp.WebApp.loadListener(WebApp.java:813)
+	at com.ibm.ws.webcontainer.webapp.WebApp.loadLifecycleListeners(WebApp.java:2292)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1036)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6684)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:472)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:467)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1188)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:111)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:985)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+[19.11.2022, 22:39:46:118 CET] 0000002e com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: Aplikacja pokedex-1.0 została zaktualizowana w ciągu 0,810 sek.
+[19.11.2022, 22:43:19:581 CET] 00000025 .apache.cxf.cxf.core.3.2:1.0.70.cl221120221010-1540(id=162)] I Setting the server's publish address to be /api/
+[19.11.2022, 22:43:19:660 CET] 00000025 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [pokedex-1.0] [/pokedex] [Controller.Config]: inicjowanie powiodło się.
+[19.11.2022, 22:43:23:535 CET] 0000004a SystemOut                                                    O Optional[Type(typeName=Ogien, multiplier=48.0, combatList=weak)]
+[19.11.2022, 22:43:35:166 CET] 00000031 SystemOut                                                    O Optional.empty
+[19.11.2022, 22:47:34:283 CET] 00000030 com.ibm.ws.config.xml.internal.ConfigRefresher               A CWWKG0016I: Rozpoczynanie aktualizacji konfiguracji serwera.
+[19.11.2022, 22:47:34:334 CET] 00000031 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Usunięta aplikacja WWW (default_host): http://localhost:9080/pokedex/
+[19.11.2022, 22:47:34:353 CET] 00000031 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [pokedex-1.0] [/pokedex] [Controller.Config]: niszczenie powiodło się.
+[19.11.2022, 22:47:34:396 CET] 00000031 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: Aplikacja pokedex-1.0 została zatrzymana pomyślnie.
+[19.11.2022, 22:47:34:399 CET] 00000030 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: Zostało utworzone zdarzenie FFDC: java.io.FileNotFoundException: /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/workarea/org.eclipse.osgi/9/data/variableCacheData (No such file or directory) com.ibm.ws.config.xml.internal.variables.ConfigVariableRegistry saveVariableCache(): Exception = /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/workarea/org.eclipse.osgi/9/data/variableCacheData (No such file or directory) w ffdc_22.11.19_22.47.34.0.log
+[19.11.2022, 22:47:34:441 CET] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Uruchomiono aktualizację składnika.
+[19.11.2022, 22:47:34:443 CET] 00000030 SystemErr                                                    R Exception in thread "Default Executor-thread-7" 
+[19.11.2022, 22:47:34:444 CET] 00000030 SystemErr                                                    R java.lang.NoClassDefFoundError: com/ibm/ws/runtime/update/internal/RuntimeUpdateManagerImpl$NotificationImpl$1
+[19.11.2022, 22:47:34:444 CET] 00000030 SystemErr                                                    R 	at com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl$NotificationImpl.waitForCompletion(RuntimeUpdateManagerImpl.java:228)
+[19.11.2022, 22:47:34:445 CET] 00000030 SystemErr                                                    R 	at com.ibm.ws.config.xml.internal.ConfigRefresher.endConfigChanges(ConfigRefresher.java:219)
+[19.11.2022, 22:47:34:445 CET] 00000030 SystemErr                                                    R 	at com.ibm.ws.config.xml.internal.ConfigRefresher.access$000(ConfigRefresher.java:40)
+[19.11.2022, 22:47:34:445 CET] 00000030 SystemErr                                                    R 	at com.ibm.ws.config.xml.internal.ConfigRefresher$1.run(ConfigRefresher.java:187)
+[19.11.2022, 22:47:34:446 CET] 00000030 SystemErr                                                    R 	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+[19.11.2022, 22:47:34:446 CET] 00000030 SystemErr                                                    R 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+[19.11.2022, 22:47:34:446 CET] 00000030 SystemErr                                                    R 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+[19.11.2022, 22:47:34:446 CET] 00000030 SystemErr                                                    R 	at java.base/java.lang.Thread.run(Thread.java:832)
+[19.11.2022, 22:47:34:447 CET] 00000030 SystemErr                                                    R Caused by: java.lang.ClassNotFoundException: com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl$NotificationImpl$1 cannot be found by com.ibm.ws.runtime.update_1.0.70.cl221120221010-1540
+[19.11.2022, 22:47:34:447 CET] 00000030 SystemErr                                                    R 	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+[19.11.2022, 22:47:34:447 CET] 00000030 SystemErr                                                    R 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+[19.11.2022, 22:47:34:447 CET] 00000030 SystemErr                                                    R 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+[19.11.2022, 22:47:34:448 CET] 00000030 SystemErr                                                    R 	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+[19.11.2022, 22:47:34:448 CET] 00000030 SystemErr                                                    R 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+[19.11.2022, 22:47:34:448 CET] 00000030 SystemErr                                                    R 	... 8 more
+[19.11.2022, 22:47:34:482 CET] 00000016 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: Zostało utworzone zdarzenie FFDC: java.lang.NoClassDefFoundError: com/ibm/ws/logging/internal/osgi/TrOSGiLogForwarder$1 com.ibm.ws.runtime.update-1.0.70.cl221120221010-1540 log w ffdc_22.11.19_22.47.34.2.log
+[19.11.2022, 22:47:34:606 CET] 00000016 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: Zostało utworzone zdarzenie FFDC: java.lang.NoClassDefFoundError: com/ibm/ws/logging/internal/osgi/TrOSGiLogForwarder$1 com.ibm.ws.logging.osgi-1.0.70.cl221120221010-1540 log w ffdc_22.11.19_22.47.34.4.log
+[19.11.2022, 22:47:34:627 CET] 00000025 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: Zostało utworzone zdarzenie FFDC: java.io.FileNotFoundException: /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/lib/platform/kernelCore-1.0.mf (No such file or directory) com.ibm.ws.kernel.feature.internal.subsystem.KernelFeatureDefinitionImpl 165 w ffdc_22.11.19_22.47.34.1.log
+[19.11.2022, 22:47:34:743 CET] 00000025 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: Zostało utworzone zdarzenie FFDC: java.io.FileNotFoundException: /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/lib/platform/defaultLogging-1.0.mf (No such file or directory) com.ibm.ws.kernel.feature.internal.subsystem.KernelFeatureDefinitionImpl 165 w ffdc_22.11.19_22.47.34.5.log
+[19.11.2022, 22:47:34:758 CET] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            E CWWKF0004E: Wystąpił nieznany wyjątek podczas instalowania lub usuwania składników. Wyjątek: java.lang.NoClassDefFoundError: com/ibm/ws/runtime/update/internal/RuntimeUpdateManagerImpl$NotificationImpl$1
+	at com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl$NotificationImpl.waitForCompletion(RuntimeUpdateManagerImpl.java:228)
+	at com.ibm.ws.kernel.feature.internal.FeatureManager.updateFeatures(FeatureManager.java:1459)
+	at com.ibm.ws.kernel.feature.internal.FeatureManager.update(FeatureManager.java:772)
+	at com.ibm.ws.kernel.feature.internal.FeatureManager.processFeatureChanges(FeatureManager.java:886)
+	at com.ibm.ws.kernel.feature.internal.FeatureManager$1.run(FeatureManager.java:672)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+[19.11.2022, 22:47:34:806 CET] 0000004f com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: Zostało utworzone zdarzenie FFDC: java.io.FileNotFoundException: /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/workarea/org.eclipse.osgi/82/data/cached-PluginCfg.xml (No such file or directory) com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator generateXML w ffdc_22.11.19_22.47.34.3.log
+[19.11.2022, 22:47:35:115 CET] 00000025 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: Zostało utworzone zdarzenie FFDC: java.lang.NoClassDefFoundError: com/ibm/ws/runtime/update/internal/RuntimeUpdateManagerImpl$NotificationImpl$1 com.ibm.ws.kernel.feature.internal.FeatureManager checkInstallStatus w ffdc_22.11.19_22.47.34.6.log
+[19.11.2022, 22:47:35:124 CET] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0013I: Usunięto z serwera następujące składniki: [cdi-2.0, el-3.0, jaxrs-2.1, jaxrsClient-2.1, jdbc-4.2, jndi-1.0, jpa-2.2, jpaContainer-2.2, jsf-2.3, jsonb-1.0, jsonp-1.1, jsp-2.3, servlet-4.0].
+[19.11.2022, 22:47:35:124 CET] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0008I: Aktualizacja składnika została zakończona po 0,684 sek.
+[19.11.2022, 22:47:35:125 CET] 00000025 SystemErr                                                    R Exception in thread "Default Executor-thread-1" 
+[19.11.2022, 22:47:35:126 CET] 00000025 SystemErr                                                    R java.lang.NoClassDefFoundError: com/ibm/ws/runtime/update/internal/RuntimeUpdateManagerImpl$NotificationImpl$1
+[19.11.2022, 22:47:35:126 CET] 00000025 SystemErr                                                    R 	at com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl$NotificationImpl.waitForCompletion(RuntimeUpdateManagerImpl.java:228)
+[19.11.2022, 22:47:35:127 CET] 00000025 SystemErr                                                    R 	at com.ibm.ws.kernel.feature.internal.FeatureManager.updateFeatures(FeatureManager.java:1544)
+[19.11.2022, 22:47:35:127 CET] 00000025 SystemErr                                                    R 	at com.ibm.ws.kernel.feature.internal.FeatureManager.update(FeatureManager.java:772)
+[19.11.2022, 22:47:35:128 CET] 00000025 SystemErr                                                    R 	at com.ibm.ws.kernel.feature.internal.FeatureManager.processFeatureChanges(FeatureManager.java:886)
+[19.11.2022, 22:47:35:128 CET] 00000025 SystemErr                                                    R 	at com.ibm.ws.kernel.feature.internal.FeatureManager$1.run(FeatureManager.java:672)
+[19.11.2022, 22:47:35:128 CET] 00000025 SystemErr                                                    R 	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+[19.11.2022, 22:47:35:128 CET] 00000025 SystemErr                                                    R 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+[19.11.2022, 22:47:35:129 CET] 00000025 SystemErr                                                    R 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+[19.11.2022, 22:47:35:129 CET] 00000025 SystemErr                                                    R 	at java.base/java.lang.Thread.run(Thread.java:832)
+[19.11.2022, 22:48:04:299 CET] 00000052 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: Zostało utworzone zdarzenie FFDC: java.io.FileNotFoundException: /Users/jakubsachajko/Desktop/jakarta_ee_project/lab_0/target/liberty/wlp/usr/servers/defaultServer/workarea/org.eclipse.osgi/9/data/configs.data (No such file or directory) com.ibm.ws.config.admin.internal.ConfigurationStore 282 w ffdc_22.11.19_22.48.04.0.log

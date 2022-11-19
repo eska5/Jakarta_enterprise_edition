@@ -1,0 +1,22 @@
+###
+
+GET http://localhost:9080/pokedex/api/types
+Accept: application/json
+
+###
+
+GET http://localhost:9080/pokedex/api/types/Ogien
+Accept: application/json
+
+###
+
+
+GET http://localhost:9080/pokedex/api/pokemons
+Accept: application/json
+
+###
+
+DELETE http://localhost:9080/pokedex/api/types/Ogien
+Accept: application/json
+
+###
